@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_corner">
+
+    <CheckBox
+        android:id="@+id/cboCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/imvThumb"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_caingot"
+        android:layout_marginHorizontal="15dp"/>
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cải Ngọt    "
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,5"
+                android:textSize="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/mainGreen"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KG"
+                android:gravity="end"
+                android:textSize="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:paddingLeft="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17.000"
+                android:textSize="14dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vnđ"
+                android:textSize="10dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:paddingLeft="2dp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btnMinus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="end"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="7dp"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_plus"/>
+
+    </LinearLayout>
+
+</LinearLayout>

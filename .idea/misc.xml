@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/drawable/ic_home.xml" value="0.19583333333333333" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/drawable/item_selector.xml" value="0.19583333333333333" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_account.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_cart.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_checkout.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_forget_password.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_notification.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_order_success.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_product_detail.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/activity_register.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/banner.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/cart_itemlayout.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/checkout_itemlayout.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_bestselling.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_layout.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_newproduct.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_onboarding_container.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_product.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/item_veggies.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/payment_itemlayout.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/menu/menu_botto_navigation.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/imvBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_broccoli">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imvVeggies"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_broccoli" />
+
+        <TextView
+            android:id="@+id/txtVeggies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="0dp"
+            android:text="Bông cải"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+</FrameLayout>

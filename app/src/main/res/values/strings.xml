@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OhFresh</string>
+    <string name="getStarted">Bắt đầu với Oh! Fresh</string>
+    <string name="homepage">Trang chủ</string>
+    <string name="category">Danh mục</string>
+    <string name="notification">Thông báo</string>
+    <string name="account">Tài khoản</string>
+    <string name="noNotification">Bạn chưa có thông báo nào</string>
+    <string name="fruit">Cherry</string>
+    <string name="price">17.000</string>
+    <string name="unit">KG</string>
+    <string name="descript_login">Cập nhật các loại củ quả tươi với Oh Fresh!</string>
+    <string name="miss_pass_title">Quên mật khẩu</string>
+    <string name="miss_pass_head">Bạn quên mật khẩu</string>
+    <string name="miss_pass_description">Vui lòng nhập địa chỉ email hoặc số điện thoại của bạn để thiết lập lại mật khẩu!</string>
+    <string name="miss_pass_button"> Lấy lại mật khẩu</string>
+    <string name="description">
+        Bắp cải trắng Đà Lạt do S1000Food phân phối được sản xuất theo quy trình hoàn toàn hữu cơ, đạt tiêu chuẩn VietGAP. Theo đó, sản phẩm không chứa chất kích thích tăng trưởng, chất bảo quản độc hại nên người tiêu dùng hoàn toàn có thể an tâm khi dùng chế biến món ăn trong gia đình.
+    </string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/item_corner"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.03"
+                app:layout_constraintHorizontal_bias="0.1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/searchView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/searchView">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cart"
+                    android:backgroundTint="@color/white"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chat"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintVertical_bias="0.03"
+                tools:layout_editor_absoluteX="0dp">
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/sliderView"
+                    android:layout_width="390dp"
+                    android:layout_height="170dp"
+                    app:sliderScrollTimeInSec="3"
+                    app:sliderStartAutoCycle="true"
+                    app:sliderAutoCycleDirection="left"
+                    app:sliderIndicatorPadding="4dp"
+                    app:sliderIndicatorRadius="1.5dp"
+                    app:sliderIndicatorOrientation="horizontal"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rclVeggies"
+                android:layout_width="402dp"
+                android:layout_height="51dp"
+                tools:listitem="@layout/item_veggies"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lnSlider"
+                app:layout_constraintVertical_bias="0.03"/>
+            <TextView
+                android:id="@+id/txtbanchay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bán chạy"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/rclVeggies"
+                app:layout_constraintLeft_toLeftOf="@id/lnSlider"
+                android:layout_marginTop="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rclBestSeller"
+                android:layout_width="390dp"
+                android:layout_height="120dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtbanchay"
+                app:layout_constraintVertical_bias="0.03"
+                tools:listitem="@layout/item_bestselling" />
+            <TextView
+                android:id="@+id/txtSanPhamMoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sản phẩm mới"
+                app:layout_constraintTop_toBottomOf="@id/rclBestSeller"
+                app:layout_constraintVertical_bias="0.03"
+                app:layout_constraintLeft_toLeftOf="@id/rclBestSeller"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <GridView
+                android:id="@+id/gvNewProduct"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:numColumns="2"
+                tools:listitem="@layout/item_newproduct"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/rclBestSeller"
+                app:layout_constraintTop_toBottomOf="@id/txtSanPhamMoi"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/nav_bg"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/item_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
