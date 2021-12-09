@@ -73,7 +73,6 @@
         android:id="@+id/txtAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="48dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="48dp"
@@ -81,8 +80,45 @@
         android:justificationMode="inter_word"
         android:text="Tôi có thể thay đổi hay hủy đơn hàng được không?"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
         app:layout_constraintStart_toStartOf="@+id/imvAnswer"
         app:layout_constraintTop_toTopOf="@+id/imvAnswer" />
+
+    <TextView
+        android:id="@+id/txtExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:justificationMode="inter_word"
+        android:text="Trải nghiệm của bạn khi sử dụng Trung tâm trợ giúp như thế nào?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer" />
+
+    <ImageView
+        android:id="@+id/imvLike"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintStart_toStartOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtExperience" />
+
+    <ImageView
+        android:id="@+id/imvDislike"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:src="@drawable/ic_dislike"
+        app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtExperience" />
 </androidx.constraintlayout.widget.ConstraintLayout>
