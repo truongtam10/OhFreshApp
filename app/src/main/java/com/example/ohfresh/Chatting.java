@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class HelpDetail extends AppCompatActivity {
+public class Chatting extends AppCompatActivity {
 
     ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help_detail);
+        setContentView(R.layout.activity_chatting);
 
         linkViews();
         addEvents();
@@ -31,4 +31,5 @@ public class HelpDetail extends AppCompatActivity {
             }
         });
     }
+
 }

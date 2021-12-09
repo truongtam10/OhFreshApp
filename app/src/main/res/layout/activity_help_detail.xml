@@ -7,7 +7,7 @@
     tools:context=".HelpDetail">
 
     <ImageButton
-        android:id="@+id/imvBack"
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Tôi có thể thay đổi hay hủy đơn hàng được không?"
@@ -78,7 +78,7 @@
         android:layout_marginEnd="48dp"
         android:fontFamily="@font/montserrat_regular"
         android:justificationMode="inter_word"
-        android:text="Tôi có thể thay đổi hay hủy đơn hàng được không?"
+        android:text="Chúng tôi rất tiếc rằng bạn không thể thay đổi hoặc hủy đơn đặt hàng Oh!Fresh sau khi đã đặt vì cửa hàng có thể đã bắt đầu chuẩn bị khi chấp nhận.\n\nĐơn đặt hàng chỉ bị hủy nếu một hoặc nhiều mặt hàng đã hết. Nếu bạn muốn thêm nhiều món hơn, vui lòng đặt một đơn hàng Oh!Fresh mới.\n\nNếu bạn đặt hàng sai địa chỉ và cách địa chỉ đã cung cấp ban đầu không quá xa, vui lòng liên hệ với tài xế của bạn thông qua tính năng gọi điện hoặc liên hệ với bộ phận Dịch vụ khách hàng của chúng tôi nếu họ có thể thay đổi địa chỉ. Nếu tài xế của bạn không thực hiện điều này, xin lưu ý rằng địa chỉ giao hàng sẽ không thay đổi và tài xế của bạn sẽ giao đơn hàng của bạn đến địa chỉ bạn đã cung cấp. "
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
@@ -106,7 +106,7 @@
         android:id="@+id/imvLike"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_like"
         app:layout_constraintStart_toStartOf="@+id/imvAnswer"
@@ -117,7 +117,7 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginEnd="120dp"
         android:src="@drawable/ic_dislike"
         app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
         app:layout_constraintTop_toBottomOf="@+id/txtExperience" />

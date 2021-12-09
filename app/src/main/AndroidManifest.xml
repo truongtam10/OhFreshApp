@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".Chatting"
+            android:exported="true" />
+        <activity
             android:name=".HelpDetail"
             android:exported="true" />
         <activity

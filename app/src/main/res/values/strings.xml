@@ -18,5 +18,13 @@
         Bắp cải trắng Đà Lạt do S1000Food phân phối được sản xuất theo quy trình hoàn toàn hữu cơ, đạt tiêu chuẩn VietGAP. Theo đó, sản phẩm không chứa chất kích thích tăng trưởng, chất bảo quản độc hại nên người tiêu dùng hoàn toàn có thể an tâm khi dùng chế biến món ăn trong gia đình.
     </string>
     <string name="helpCenter">Trung tâm trợ giúp</string>
-    <string name="welcome"><br>Xin chào <b>Scrum Nguyễn</b>, \n</br><br>Hãy để Oh!Fresh giúp bạn</br></string>
+    <string name="welcome"><br>Xin chào <b>Trường Tâm</b>, \n</br><br>Hãy để Oh!Fresh giúp bạn</br></string>
+
+    <string-array name="questions">
+        <item>Tôi có thể thay đổi hay hủy đơn hàng được không?</item>
+        <item>Làm thế nào để sử dụng mã giảm giá?</item>
+        <item>Làm thế nào để hủy đơn hàng đã đặt?</item>
+        <item>Làm thế nào để được giao hàng miễn phí?</item>
+    </string-array>
+    -array>
 </resources>
