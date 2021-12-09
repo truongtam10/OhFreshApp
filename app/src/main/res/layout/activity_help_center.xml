@@ -7,6 +7,7 @@
     tools:context=".HelpCenter">
 
     <ImageButton
+        android:id="@+id/imvBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -17,7 +18,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -33,9 +33,9 @@
         android:id="@+id/txtSearch"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/item_corner"
         android:drawableLeft="@drawable/ic_search"
         android:drawablePadding="16dp"
@@ -49,12 +49,58 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imvModel"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/help_center"
+        app:layout_constraintBottom_toTopOf="@+id/txtSearch"
+        app:layout_constraintEnd_toEndOf="@+id/txtSearch" />
+
+    <TextView
+        android:id="@+id/txtWelcom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imvModel"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toTopOf="@+id/imvModel" />
 
-        android:layout_marginEnd="411dp"
-        android:layout_marginBottom="731dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/txtFrequentlyAsked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="CÂU HỎI THƯỜNG GẶP"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+
+    <ListView
+        android:id="@+id/lvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSearch"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrequentlyAsked" />
+
+    <TextView
+        android:id="@+id/txtLoadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="XEM THÊM"
+        android:textColor="@color/mainGreen"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toBottomOf="@id/lvQuestion" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
