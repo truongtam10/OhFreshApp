@@ -80,7 +80,7 @@
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/item_corner"
                 android:ems="10"
                 android:fontFamily="@font/montserrat_light"

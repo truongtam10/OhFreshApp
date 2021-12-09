@@ -9,9 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.GridView;
-import android.widget.ImageButton;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -47,7 +45,6 @@ public class HomePage extends AppCompatActivity {
     ArrayList<NewProductItems> newProducts;
     NewProductAdapter npAdapter;
     BottomNavigationView bottomNavigationView;
-    ImageButton btnChat, btnCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +52,10 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         linkViews();
-        configureNavigation();
         setSlider();
         initData();
         loadData();
-        addEvents();
     }
-
     private void initData() {
         //VeggiesData
         veggies = new ArrayList<VeggiesItems>();
@@ -101,8 +95,6 @@ public class HomePage extends AppCompatActivity {
         rclBestSelling = findViewById(R.id.rclBestSeller);
         gvNewProduct = findViewById(R.id.gvNewProduct);
         bottomNavigationView = findViewById(R.id.navigation);
-        btnChat = findViewById(R.id.btnChat);
-        btnCart = findViewById(R.id.btnCart);
     }
 
     private void loadData() {
@@ -121,7 +113,6 @@ public class HomePage extends AppCompatActivity {
         gvNewProduct.setAdapter(npAdapter);
 
     }
-
     private void configureNavigation() {
         bottomNavigationView.setSelectedItemId(R.id.navHomepage);
 
@@ -151,22 +142,5 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-    }
-    private void addEvents() {
-        btnChat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this, Chatting.class);
-                startActivity(intent);
-            }
-        });
-
-        btnCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this, Cart.class);
-                startActivity(intent);
-            }
-        });
     }
 }
