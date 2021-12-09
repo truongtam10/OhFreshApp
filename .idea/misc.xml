@@ -30,16 +30,19 @@
         <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/layout/payment_itemlayout.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/menu/menu_botto_navigation.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFresh/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/answer_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/help_background.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_ant_design_question_support.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_back.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_next.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_search.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/item_selector.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/nav_bg.xml" value="0.19583333333333333" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/onboarding_indicator_active.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_cart.xml" value="0.4466666666666667" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_help_center.xml" value="0.16666666666666666" />
-        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_help_detail.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_help_detail.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_notification.xml" value="0.1796875" />
