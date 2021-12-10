@@ -1,0 +1,63 @@
+package com.example.ohfresh;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.TabHost;
+
+public class MemberRank extends AppCompatActivity {
+
+    TabHost tabHost;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_member_rank);
+        linkViews();
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Đơn hàng");
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void linkViews(){
+        tabHost = findViewById(R.id.tabHost);
+        tabHost.setup();
+        createTab();
+    }
+
+    private void createTab(){
+        //Đang giao
+        TabHost.TabSpec tab1;
+        tab1  = tabHost.newTabSpec("tab1");
+        tab1.setContent(R.id.tab1);
+        tab1.setIndicator("Thành viên");
+        tabHost.addTab(tab1);
+
+        //Đã giao
+        TabHost.TabSpec tab2;
+        tab2 = tabHost.newTabSpec("tab2");
+        tab2.setContent(R.id.tab2);
+        tab2.setIndicator("Bạc");
+        tabHost.addTab(tab2);
+
+        //Đã hủy
+        TabHost.TabSpec tab3;
+        tab3 = tabHost.newTabSpec("tab3");
+        tab3.setContent(R.id.tab3);
+        tab3.setIndicator("Vàng");
+        tabHost.addTab(tab3);
+
+        //Đã hủy
+        TabHost.TabSpec tab4;
+        tab4 = tabHost.newTabSpec("tab4");
+        tab4.setContent(R.id.tab4);
+        tab4.setIndicator("Bạch kim");
+        tabHost.addTab(tab4);
+    }
+}
