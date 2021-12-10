@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_regular"
-                    android:text="Tích lũy điểm thưởng"
+                    android:text="@string/silver_score_des"
                     android:textColor="@color/mainGray"
                     android:textSize="10sp" />
 
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_regular"
-                    android:text="Tích lũy điểm thưởng"
+                    android:text="@string/silver_special_month"
                     android:textColor="@color/black"
                     android:textSize="13sp" />
 
@@ -103,61 +103,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/montserrat_regular"
-                    android:text="Tích lũy điểm thưởng"
+                    android:text="@string/silver_special_month_des"
                     android:textColor="@color/mainGray"
                     android:textSize="10sp" />
 
             </LinearLayout>
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/mainLightGray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_check" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Tích lũy điểm thưởng"
-                    android:textColor="@color/black"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="Tích lũy điểm thưởng"
-                    android:textColor="@color/mainGray"
-                    android:textSize="10sp" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/mainLightGray" />
 
 
     </LinearLayout>

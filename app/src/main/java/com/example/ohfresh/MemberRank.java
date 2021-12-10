@@ -53,11 +53,5 @@ public class MemberRank extends AppCompatActivity {
         tab3.setIndicator("Vàng");
         tabHost.addTab(tab3);
 
-        //Plantinum
-        TabHost.TabSpec tab4;
-        tab4 = tabHost.newTabSpec("tab4");
-        tab4.setContent(R.id.tab4);
-        tab4.setIndicator("Bạch kim");
-        tabHost.addTab(tab4);
     }
 }
