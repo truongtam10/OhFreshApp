@@ -66,10 +66,30 @@
     <string name="txt_rank_card_title">Thành viên</string>
     <string name="txt_rank_suggest">Tích lũy 99 điểm trước 31 tháng 12, 2021 để đạt hạng Bạc</string>
     <string name="txt_score_title">Bạn đang có</string>
-    <string name="txt_score">4000</string>
+    <string name="txt_score">44</string>
     <string name="txt_score_sub">điểm thưởng</string>
     
-<!--  Rank_member  -->
+    <!--  Rank_member  -->
     <string name="txt_member_title">Lợi ích của bạn</string>
     <string name="txt_bef1">Chào mừng bạn đến với Oh Fresh Rewards! Với mỗi đơn đặt hàng, bạn sẽ được tích một số điểm tương ứng. Điểm số càng cao, bạn sẽ có cơ hội nâng hạng và kèm theo đó là những đặc quyền hấp dẫn</string>
+
+    <!--  Rank_silver  -->
+    <string name="silver_title">Ưu đãi hạng Bạc</string>
+    <string name="silver_prior_booking">Ưu tiên giao hàng</string>
+    <string name="silver_score_des">Nhân 2 lần điểm thưởng khi là thành viên hạng Bạc</string>
+    <string name="silver_special_month">ƯU ĐÃI HÀNG THÁNG</string>
+    <string name="silver_special_month_des">Nhận nhiều ưu đãi hàng tháng như giảm giá mua sắm, tiện ích...</string>
+
+    <!--  Rank_gold  -->
+    <string name="gold_title">Hạng Vàng</string>
+    <string name="gold_score_title">Nhân 3 lần điểm thưởng khi là thành viên hạng Vàng</string>
+    <string name="gold_delivery_prior">Ưu tiên giao hàng nhanh hơn so với thành viên hạng Bạc</string>
+    <string name="gold_special">ƯU TIÊN HỖ TRỢ DÀNH RIÊNG CHO KHÁCH HÀNG HẠNG VÀNG</string>
+    <string name="gold_special_des">Liên hệ qua mục Trợ giúp trong ứng dụng để được ưu tiên hỗ trợ dành riêng cho thành viên hạng Vàng</string>
+    <string name="gold_special_month">ƯU ĐÃI ĐẶC BIỆT MỖI THÁNG</string>
+    <string name="gold_special_month_des">Tận hưởng ưu đãi đặc biệt mỗi tháng như giảm giá các sản phẩm nhập khẩu, voucher giá trị cao</string>
+
+
+
+
 </resources>
