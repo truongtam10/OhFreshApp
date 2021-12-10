@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpDetail">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHelpCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/helpCenter"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/help_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelpCenter" />
+
+    <ImageView
+        android:id="@+id/imvAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/answer_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvQuestion" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Tôi có thể thay đổi hay hủy đơn hàng được không?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imvQuestion"
+        app:layout_constraintTop_toTopOf="@+id/imvQuestion" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:justificationMode="inter_word"
+        android:text="Chúng tôi rất tiếc rằng bạn không thể thay đổi hoặc hủy đơn đặt hàng Oh!Fresh sau khi đã đặt vì cửa hàng có thể đã bắt đầu chuẩn bị khi chấp nhận.\n\nĐơn đặt hàng chỉ bị hủy nếu một hoặc nhiều mặt hàng đã hết. Nếu bạn muốn thêm nhiều món hơn, vui lòng đặt một đơn hàng Oh!Fresh mới.\n\nNếu bạn đặt hàng sai địa chỉ và cách địa chỉ đã cung cấp ban đầu không quá xa, vui lòng liên hệ với tài xế của bạn thông qua tính năng gọi điện hoặc liên hệ với bộ phận Dịch vụ khách hàng của chúng tôi nếu họ có thể thay đổi địa chỉ. Nếu tài xế của bạn không thực hiện điều này, xin lưu ý rằng địa chỉ giao hàng sẽ không thay đổi và tài xế của bạn sẽ giao đơn hàng của bạn đến địa chỉ bạn đã cung cấp. "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/imvAnswer"
+        app:layout_constraintTop_toTopOf="@+id/imvAnswer" />
+
+    <TextView
+        android:id="@+id/txtExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:justificationMode="inter_word"
+        android:text="Trải nghiệm của bạn khi sử dụng Trung tâm trợ giúp như thế nào?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer" />
+
+    <ImageView
+        android:id="@+id/imvLike"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintStart_toStartOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtExperience" />
+
+    <ImageView
+        android:id="@+id/imvDislike"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:src="@drawable/ic_dislike"
+        app:layout_constraintEnd_toEndOf="@+id/imvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtExperience" />
+</androidx.constraintlayout.widget.ConstraintLayout>
