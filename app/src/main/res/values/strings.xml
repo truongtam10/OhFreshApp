@@ -68,4 +68,8 @@
     <string name="txt_score_title">Bạn đang có</string>
     <string name="txt_score">4000</string>
     <string name="txt_score_sub">điểm thưởng</string>
+    
+<!--  Rank_member  -->
+    <string name="txt_member_title">Lợi ích của bạn</string>
+    <string name="txt_bef1">Chào mừng bạn đến với Oh Fresh Rewards! Với mỗi đơn đặt hàng, bạn sẽ được tích một số điểm tương ứng. Điểm số càng cao, bạn sẽ có cơ hội nâng hạng và kèm theo đó là những đặc quyền hấp dẫn</string>
 </resources>

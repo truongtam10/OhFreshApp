@@ -32,28 +32,28 @@ public class MemberRank extends AppCompatActivity {
     }
 
     private void createTab(){
-        //Đang giao
+        //Member
         TabHost.TabSpec tab1;
         tab1  = tabHost.newTabSpec("tab1");
         tab1.setContent(R.id.tab1);
         tab1.setIndicator("Thành viên");
         tabHost.addTab(tab1);
 
-        //Đã giao
+        //Silver
         TabHost.TabSpec tab2;
         tab2 = tabHost.newTabSpec("tab2");
         tab2.setContent(R.id.tab2);
         tab2.setIndicator("Bạc");
         tabHost.addTab(tab2);
 
-        //Đã hủy
+        //Gold
         TabHost.TabSpec tab3;
         tab3 = tabHost.newTabSpec("tab3");
         tab3.setContent(R.id.tab3);
         tab3.setIndicator("Vàng");
         tabHost.addTab(tab3);
 
-        //Đã hủy
+        //Plantinum
         TabHost.TabSpec tab4;
         tab4 = tabHost.newTabSpec("tab4");
         tab4.setContent(R.id.tab4);

@@ -191,7 +191,7 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <include layout="@layout/fragment_delivering" />
+                            <include layout="@layout/rank_member" />
 
                         </LinearLayout>
 
@@ -201,7 +201,7 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <include layout="@layout/fragment_delivered" />
+                            <include layout="@layout/rank_silver" />
 
                         </LinearLayout>
 
