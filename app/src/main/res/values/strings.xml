@@ -61,5 +61,11 @@
     <string name="txt_delivered">Giao hàng thành công</string>
     <string name="txt_cancelled">Đã hủy</string>
 
-<!--    -->
+    <!--  Member Rank  -->
+    <string name="txt_rank_title">Hạng thành viên</string>
+    <string name="txt_rank_card_title">Thành viên</string>
+    <string name="txt_rank_suggest">Tích lũy 99 điểm trước 31 tháng 12, 2021 để đạt hạng Bạc</string>
+    <string name="txt_score_title">Bạn đang có</string>
+    <string name="txt_score">4000</string>
+    <string name="txt_score_sub">điểm thưởng</string>
 </resources>
