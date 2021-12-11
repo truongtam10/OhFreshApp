@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.GridView;
 
 import com.example.adapter.ProductAdapter;
 import com.example.model.Product;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,7 @@ public class Category extends AppCompatActivity {
     ArrayList<Product> products;
     ProductAdapter adapter;
     BottomNavigationView bottomNavigationView;
+    MaterialButton btnAll, btnVegetable, btnFruit, btnSeed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +31,74 @@ public class Category extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        changeData();
         configureNavigation();
+    }
+
+    private void changeData() {
+        btnAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                initData();
+                loadData();
+            }
+        });
+
+        btnVegetable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                products = new ArrayList<Product>();
+                products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));
+                products.add(new Product(R.drawable.img_atiso, "Atiso", "35000", "Hoa"));
+                products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
+                products.add(new Product(R.drawable.img_bellpepper, "Ớt chuông", "30000", "KG"));
+                products.add(new Product(R.drawable.img_caingot, "Cải ngọt", "29000", "KG"));
+                products.add(new Product(R.drawable.img_broccoli, "Bông cải", "49000", "KG"));
+                products.add(new Product(R.drawable.img_corn, "Ngô", "35000", "KG"));
+                products.add(new Product(R.drawable.img_pumpkin, "Bí đỏ", "35000", "KG"));
+                loadData();
+            }
+        });
+
+        btnFruit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                products = new ArrayList<Product>();
+                products.add(new Product(R.drawable.img_peach, "Đào", "50000", "KG"));
+                products.add(new Product(R.drawable.img_apple, "Táo", "35000", "KG"));
+                products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
+                products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
+                products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
+                products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
+                products.add(new Product(R.drawable.img_raspberry, "Raspberry", "35000", "KG"));
+                loadData();
+            }
+        });
+
+        btnSeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                products = new ArrayList<Product>();
+                products.add(new Product(R.drawable.img_greenpea, "Đào", "50000", "KG"));
+                products.add(new Product(R.drawable.img_mushroom, "Nấm", "35000", "KG"));
+                products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
+                products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
+                products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
+                products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
+                products.add(new Product(R.drawable.img_raspberry, "Raspberry", "35000", "KG"));
+                loadData();
+            }
+        });
     }
 
     private void linkViews() {
         gvProduct = findViewById(R.id.gvProduct);
         bottomNavigationView = findViewById(R.id.navigation);
+
+        btnAll = findViewById(R.id.btnAll);
+        btnVegetable = findViewById(R.id.btnVegetable);
+        btnFruit = findViewById(R.id.btnFruit);
+        btnSeed = findViewById(R.id.btnSeed);
     }
 
     private void initData() {
