@@ -10,12 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".UserPolicy"
+            android:exported="true" />
+        <activity
             android:name=".MemberRank"
-            android:exported="true">
-
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Chatting"
             android:exported="true" />
@@ -54,40 +53,25 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".Register"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".ResetPassword"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".OTPVerify"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true"></activity>
+        <activity
+            android:name=".ResetPassword"
+            android:exported="true"></activity>
+        <activity
+            android:name=".OTPVerify"
+            android:exported="true"></activity>
         <activity
             android:name=".ForgetPassword"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Notification"
             android:exported="true" />
         <activity
             android:name=".Account"
-            android:exported="true">
-
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
