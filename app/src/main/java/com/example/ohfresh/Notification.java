@@ -6,11 +6,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TabHost;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Notification extends AppCompatActivity {
+
     BottomNavigationView bottomNavigationView;
+    TabHost thNotification;
+    ListView lvOffer;
+    String[] offers;
+    ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +30,48 @@ public class Notification extends AppCompatActivity {
 
         linkViews();
         configureNavigation();
+        loadData();
+        addEvents();
     }
 
     private void linkViews() {
         bottomNavigationView = findViewById(R.id.navigation);
+        thNotification = findViewById(R.id.thNotification);
+        lvOffer = findViewById(R.id.lvOffer);
+        thNotification.setup();
+        createTab();
+    }
+
+    private void loadData() {
+        offers = getResources().getStringArray(R.array.offers);
+        adapter = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,offers);
+        lvOffer.setAdapter(adapter);
+    }
+
+    private void addEvents() {
+        lvOffer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Notification.this, Offer.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void createTab() {
+        //Offer
+        TabHost.TabSpec tabOffer;
+        tabOffer  = thNotification.newTabSpec("tabOffer");
+        tabOffer.setContent(R.id.tabOffer);
+        tabOffer.setIndicator("Ưu đãi");
+        thNotification.addTab(tabOffer);
+
+        //Update
+        TabHost.TabSpec tabUpdate;
+        tabUpdate = thNotification.newTabSpec("tabUpdate");
+        tabUpdate.setContent(R.id.tabUpdate);
+        tabUpdate.setIndicator("Cập nhật đơn hàng");
+        thNotification.addTab(tabUpdate);
     }
 
     private void configureNavigation() {
