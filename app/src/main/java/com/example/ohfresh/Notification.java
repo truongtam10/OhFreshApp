@@ -19,9 +19,9 @@ public class Notification extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     TabHost thNotification;
-    ListView lvOffer;
-    String[] offers;
-    ArrayAdapter<String> adapter;
+    ListView lvOffer, lvUpdate;
+    String[] offers, updates;
+    ArrayAdapter<String> adapterOffer, adapterUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +38,18 @@ public class Notification extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.navigation);
         thNotification = findViewById(R.id.thNotification);
         lvOffer = findViewById(R.id.lvOffer);
+        lvUpdate = findViewById(R.id.lvUpdate);
         thNotification.setup();
         createTab();
     }
 
     private void loadData() {
         offers = getResources().getStringArray(R.array.offers);
-        adapter = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,offers);
-        lvOffer.setAdapter(adapter);
+        updates = getResources().getStringArray(R.array.updates);
+        adapterOffer = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,offers);
+        adapterUpdate = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,updates);
+        lvOffer.setAdapter(adapterOffer);
+        lvUpdate.setAdapter(adapterUpdate);
     }
 
     private void addEvents() {
@@ -53,6 +57,14 @@ public class Notification extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(Notification.this, Offer.class);
+                startActivity(intent);
+            }
+        });
+
+        lvUpdate.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Notification.this, Update.class);
                 startActivity(intent);
             }
         });

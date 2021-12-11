@@ -25,7 +25,7 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="Dịch vụ khách hàng"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

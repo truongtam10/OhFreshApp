@@ -193,4 +193,11 @@
         <item>Oh!Fresh giảm 90k - CHỈ TRONG HÔM NAY</item>
         <item>Siêu sale 12.12 - Ưu đãi như cho</item>
     </string-array>
+
+    <string-array name="updates">
+        <item>Đơn hàng XXXXXXXX của bạn đã được giao thành công</item>
+        <item>Đơn hàng XXXXXXXX của bạn đã bị hủy</item>
+        <item>Đơn hàng XXXXXXXX của bạn đã được giao thành công</item>
+        <item>Đơn hàng XXXXXXXX của bạn đã đang được giao</item>
+    </string-array>
 </resources>

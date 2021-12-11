@@ -25,7 +25,7 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="Ưu đãi"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,10 +73,29 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:text="🥗 MỪNG BẠN CŨ QUAY LẠI, TA CŨNG ĂN LỚN ƯU ĐÃI GIẢM 60% 🥗"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/montserrat_medium"
         android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOfferDate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuyNow"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mainGreen"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Mua ngay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
