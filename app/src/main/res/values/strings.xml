@@ -10,11 +10,86 @@
     <string name="price">17.000</string>
     <string name="unit">KG</string>
     <string name="descript_login">Cập nhật các loại củ quả tươi với Oh Fresh!</string>
-    <string name="miss_pass_title">Quên mật khẩu</string>
-    <string name="miss_pass_head">Bạn quên mật khẩu</string>
-    <string name="miss_pass_description">Vui lòng nhập địa chỉ email hoặc số điện thoại của bạn để thiết lập lại mật khẩu!</string>
-    <string name="miss_pass_button"> Lấy lại mật khẩu</string>
     <string name="description">
         Bắp cải trắng Đà Lạt do S1000Food phân phối được sản xuất theo quy trình hoàn toàn hữu cơ, đạt tiêu chuẩn VietGAP. Theo đó, sản phẩm không chứa chất kích thích tăng trưởng, chất bảo quản độc hại nên người tiêu dùng hoàn toàn có thể an tâm khi dùng chế biến món ăn trong gia đình.
     </string>
+    <string name="helpCenter">Trung tâm trợ giúp</string>
+    <string name="welcome"><br>Xin chào <b>Trường Tâm</b>, \n</br><br>Hãy để Oh!Fresh giúp bạn</br></string>
+
+    <string-array name="questions">
+        <item>Tôi có thể thay đổi hay hủy đơn hàng được không?</item>
+        <item>Làm thế nào để sử dụng mã giảm giá?</item>
+        <item>Làm thế nào để hủy đơn hàng đã đặt?</item>
+        <item>Làm thế nào để được giao hàng miễn phí?</item>
+    </string-array>
+    -array>
+
+    <!-- Quên mật khẩu-->
+    <string name="miss_pass_title">Quên mật khẩu</string>
+    <string name="miss_pass_head">Bạn quên mật khẩu</string>
+    <string name="miss_pass_description">Vui lòng nhập địa chỉ email hoặc số điện thoại của bạn để thiết lập lại mật khẩu!</string>
+    <string name="miss_pass_button">Gửi mã OTP</string>
+    <string name="verify_otp_title">Xác nhận OTP</string>
+    <string name="verify_otp_description1">Mã xác nhận OTP đã được gửi đến:</string>
+    <string name="verify_otp_description2">Vui lòng nhập mã xác nhận</string>
+    <string name="verify_otp_btn">Xác nhận OTP</string>
+    <string name="verify_otp_notreceive">Không nhận được tin nhắn?</string>
+    <string name="verify_otp_resendotp">Gửi lại mã OTP</string>
+    <string name="set_newpass_title">Thiết lập mật khẩu</string>
+    <string name="set_newpass_btn">Thay đổi mật khẩu</string>
+
+
+    <!-- Order   -->
+    <string name="order_title">Đơn hàng</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Delivering Fragment -->
+    <string name="total_title">Thành tiền:</string>
+    <string name="total_money">17.000 vnđ</string>
+
+    <!-- Delivered Fragment -->
+    <string name="btn_re_buy">Mua lại</string>
+    <string name="btn_rate">Đánh giá</string>
+
+    <!-- Rating -->
+    <string name="rating_title">Đánh giá sản phẩm</string>
+    <string name="rating_content">Hãy chia sẻ cảm nhận của bạn về sản phẩm này nhé!</string>
+    <string name="rating_add_photo">Thêm ảnh/ video</string>
+    <string name="rating_submit">Thêm ảnh/ video</string>
+
+    <!--    Deliver Status-->
+    <string name="txt_delivering">Đang giao hàng</string>
+    <string name="txt_delivered">Giao hàng thành công</string>
+    <string name="txt_cancelled">Đã hủy</string>
+
+    <!--  Member Rank  -->
+    <string name="txt_rank_title">Hạng thành viên</string>
+    <string name="txt_rank_card_title">Thành viên</string>
+    <string name="txt_rank_suggest">Tích lũy 99 điểm trước 31 tháng 12, 2021 để đạt hạng Bạc</string>
+    <string name="txt_score_title">Bạn đang có</string>
+    <string name="txt_score">44</string>
+    <string name="txt_score_sub">điểm thưởng</string>
+    
+    <!--  Rank_member  -->
+    <string name="txt_member_title">Lợi ích của bạn</string>
+    <string name="txt_bef1">Chào mừng bạn đến với Oh Fresh Rewards! Với mỗi đơn đặt hàng, bạn sẽ được tích một số điểm tương ứng. Điểm số càng cao, bạn sẽ có cơ hội nâng hạng và kèm theo đó là những đặc quyền hấp dẫn</string>
+
+    <!--  Rank_silver  -->
+    <string name="silver_title">Ưu đãi hạng Bạc</string>
+    <string name="silver_prior_booking">Ưu tiên giao hàng</string>
+    <string name="silver_score_des">Nhân 2 lần điểm thưởng khi là thành viên hạng Bạc</string>
+    <string name="silver_special_month">ƯU ĐÃI HÀNG THÁNG</string>
+    <string name="silver_special_month_des">Nhận nhiều ưu đãi hàng tháng như giảm giá mua sắm, tiện ích...</string>
+
+    <!--  Rank_gold  -->
+    <string name="gold_title">Hạng Vàng</string>
+    <string name="gold_score_title">Nhân 3 lần điểm thưởng khi là thành viên hạng Vàng</string>
+    <string name="gold_delivery_prior">Ưu tiên giao hàng nhanh hơn so với thành viên hạng Bạc</string>
+    <string name="gold_special">ƯU TIÊN HỖ TRỢ DÀNH RIÊNG CHO KHÁCH HÀNG HẠNG VÀNG</string>
+    <string name="gold_special_des">Liên hệ qua mục Trợ giúp trong ứng dụng để được ưu tiên hỗ trợ dành riêng cho thành viên hạng Vàng</string>
+    <string name="gold_special_month">ƯU ĐÃI ĐẶC BIỆT MỖI THÁNG</string>
+    <string name="gold_special_month_des">Tận hưởng ưu đãi đặc biệt mỗi tháng như giảm giá các sản phẩm nhập khẩu, voucher giá trị cao</string>
+
+
+
+
 </resources>
