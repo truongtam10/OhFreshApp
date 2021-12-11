@@ -158,7 +158,10 @@ public class OTPVerify extends AppCompatActivity {
                     return;
                 }else {
                     Toast.makeText(OTPVerify.this, "Xác nhận OTP thành công!", Toast.LENGTH_SHORT).show();
-                    return;
+//                    return;
+
+                    Intent intent = new Intent(OTPVerify.this, ResetPassword.class);
+                    startActivity(intent);
                 }
             }
         });

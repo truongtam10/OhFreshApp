@@ -71,7 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <EditText
-                android:id="@+id/edtUserName2"
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
@@ -88,7 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
 
             <EditText
-                android:id="@+id/edtPassword2"
+                android:id="@+id/edtPhoneInput"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
@@ -102,7 +102,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtUserName2" />
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
             <EditText
                 android:id="@+id/edtPassword"
@@ -119,10 +119,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtPassword2" />
+                app:layout_constraintTop_toBottomOf="@+id/edtPhoneInput" />
 
             <EditText
-                android:id="@+id/edtPassword3"
+                android:id="@+id/edtRePassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
@@ -153,13 +153,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/edtPassword3"
+                app:layout_constraintBottom_toBottomOf="@+id/edtRePassword"
                 app:layout_constraintEnd_toEndOf="@+id/edtPassword"
-                app:layout_constraintTop_toTopOf="@+id/edtPassword3"
+                app:layout_constraintTop_toTopOf="@+id/edtRePassword"
                 app:srcCompat="@drawable/ic_eye_closed" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/button"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="27dp"
@@ -183,8 +183,8 @@
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Tôi đồng ý với"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/button"
-                app:layout_constraintTop_toBottomOf="@+id/edtPassword3" />
+                app:layout_constraintStart_toStartOf="@+id/btnRegister"
+                app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
 
             <TextView
                 android:id="@+id/txtMiss2"
@@ -199,16 +199,16 @@
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txtMiss"
-                app:layout_constraintTop_toBottomOf="@+id/edtPassword3" />
+                app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/chkProvision"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:button="@drawable/custom_checkbox"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtPassword3" />
+                app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,6 +35,8 @@
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.1796875" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/button_border.xml" value="0.21388888888888888" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/custom_button.xml" value="0.2703125" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/help_background.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/ic_delivery.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/ic_prohibit.xml" value="0.2703125" />
@@ -46,12 +48,12 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_forget_password.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_help_center.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_member_rank.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_order.xml" value="0.2" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_otpverify.xml" value="0.36" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_rating.xml" value="0.264" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_reset_password.xml" value="0.4" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/cart_itemlayout.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/fragment_cancel_order.xml" value="0.4" />

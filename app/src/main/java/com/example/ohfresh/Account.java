@@ -13,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport;
+    LinearLayout lnSupport, lnRank, lnDelivering;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ public class Account extends AppCompatActivity {
     private void linkViews() {
         bottomNavigationView = findViewById(R.id.navigation);
         lnSupport = findViewById(R.id.lnSupport);
+        lnRank= findViewById(R.id.lnRank);
+        lnDelivering= findViewById(R.id.lnDelivering);
     }
 
     private void configureNavigation() {
@@ -63,6 +65,25 @@ public class Account extends AppCompatActivity {
     }
 
     private void addEvents() {
+
+        lnDelivering.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Order.class);
+                startActivity(intent);
+            }
+        });
+
+
+        lnRank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, MemberRank.class);
+                startActivity(intent);
+            }
+        });
+
+
         lnSupport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

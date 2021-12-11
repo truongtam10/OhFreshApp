@@ -3,18 +3,25 @@ package com.example.ohfresh;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TabHost;
 
 public class MemberRank extends AppCompatActivity {
+
+    ImageView imvBack;
 
     TabHost tabHost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_rank);
+
         linkViews();
+        addEvents();
 
     }
 
@@ -26,9 +33,20 @@ public class MemberRank extends AppCompatActivity {
     }
 
     private void linkViews(){
+        imvBack = findViewById(R.id.imvBack);
         tabHost = findViewById(R.id.tabHost);
         tabHost.setup();
         createTab();
+    }
+
+    private void addEvents(){
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MemberRank.this, Account.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void createTab(){

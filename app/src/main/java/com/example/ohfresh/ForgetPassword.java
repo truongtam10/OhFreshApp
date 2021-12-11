@@ -39,7 +39,7 @@ public class ForgetPassword extends AppCompatActivity {
                     Toast.makeText(ForgetPassword.this, "Vui lòng nhập số điện thoại", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Intent intent = new Intent(getApplicationContext(), OTPVerify.class);
+                Intent intent = new Intent(ForgetPassword.this, OTPVerify.class);
                 intent.putExtra("mobile", edtPhoneInput.getText().toString());
                 startActivity(intent);
             }
@@ -48,7 +48,7 @@ public class ForgetPassword extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(ForgetPassword.this, Login.class);
                 startActivity(intent);
             }
         });
