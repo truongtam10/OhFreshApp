@@ -38,11 +38,13 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintBottom_toBottomOf="@id/searchView">
                 <ImageButton
+                    android:id="@+id/btnCart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_cart"
                     android:backgroundTint="@color/white"/>
                 <ImageButton
+                    android:id="@+id/btnChat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_chat"

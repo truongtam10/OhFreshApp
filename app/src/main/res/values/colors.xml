@@ -12,4 +12,5 @@
     <color name="mainGray">#686874</color>
     <color name="mainLightGray">#C8C8D5</color>
     <color name="veryLightGray">#F7F7F8</color>
+    <color name="mainGrayBG">#F5F5FA</color>
 </resources>
