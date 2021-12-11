@@ -48,14 +48,14 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 products = new ArrayList<Product>();
-                products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));
-                products.add(new Product(R.drawable.img_atiso, "Atiso", "35000", "Hoa"));
-                products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
-                products.add(new Product(R.drawable.img_bellpepper, "Ớt chuông", "30000", "KG"));
-                products.add(new Product(R.drawable.img_caingot, "Cải ngọt", "29000", "KG"));
-                products.add(new Product(R.drawable.img_broccoli, "Bông cải", "49000", "KG"));
-                products.add(new Product(R.drawable.img_corn, "Ngô", "35000", "KG"));
-                products.add(new Product(R.drawable.img_pumpkin, "Bí đỏ", "35000", "KG"));
+                products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17.000", "KG"));
+                products.add(new Product(R.drawable.img_atiso, "Atiso", "35.000", "Hoa"));
+                products.add(new Product(R.drawable.img_tomato, "Cà chua", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_bellpepper, "Ớt chuông", "30.000", "KG"));
+                products.add(new Product(R.drawable.img_caingot, "Cải ngọt", "29.000", "KG"));
+                products.add(new Product(R.drawable.img_broccoli, "Bông cải", "49.000", "KG"));
+                products.add(new Product(R.drawable.img_corn, "Ngô", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_pumpkin, "Bí đỏ", "35.000", "KG"));
                 loadData();
             }
         });
@@ -64,13 +64,13 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 products = new ArrayList<Product>();
-                products.add(new Product(R.drawable.img_peach, "Đào", "50000", "KG"));
-                products.add(new Product(R.drawable.img_apple, "Táo", "35000", "KG"));
-                products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
-                products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
-                products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
-                products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
-                products.add(new Product(R.drawable.img_raspberry, "Raspberry", "35000", "KG"));
+                products.add(new Product(R.drawable.img_peach, "Đào", "50.000", "KG"));
+                products.add(new Product(R.drawable.img_apple, "Táo", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_banana, "Chuối", "15.000", "KG"));
+                products.add(new Product(R.drawable.img_cherry, "Cherry", "40.000", "KG"));
+                products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_raspberry, "Raspberry", "35.000", "KG"));
                 loadData();
             }
         });
@@ -79,13 +79,13 @@ public class Category extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 products = new ArrayList<Product>();
-                products.add(new Product(R.drawable.img_greenpea, "Đào", "50000", "KG"));
-                products.add(new Product(R.drawable.img_mushroom, "Nấm", "35000", "KG"));
-                products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
-                products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
-                products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
-                products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
-                products.add(new Product(R.drawable.img_raspberry, "Raspberry", "35000", "KG"));
+                products.add(new Product(R.drawable.img_cashew, "Hạt điều", "50.000", "KG"));
+                products.add(new Product(R.drawable.img_chia, "Hạt Chia", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_flax, "Hạt dưa", "15.000", "KG"));
+                products.add(new Product(R.drawable.img_macca, "Hạt Macca", "40.000", "KG"));
+                products.add(new Product(R.drawable.img_occho, "Hạt óc chó", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_hemp, "Gai dầu", "35.000", "KG"));
+                products.add(new Product(R.drawable.img_oats, "Yến mạch", "35.000", "KG"));
                 loadData();
             }
         });
