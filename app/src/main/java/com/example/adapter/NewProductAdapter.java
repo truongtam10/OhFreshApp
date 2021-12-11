@@ -10,29 +10,31 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.model.NewProductItems;
+import com.example.model.Product;
 import com.example.ohfresh.R;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
 public class NewProductAdapter extends BaseAdapter {
     Activity context;
-    int item_layout;
-    List<NewProductItems> newProducts;
+    int item_gridview;
+    List<Product> productList;
 
-    public NewProductAdapter(Activity context, int item_layout, List<NewProductItems> newProducts) {
+    public NewProductAdapter (Activity context, int item_gridview, List<Product> productList) {
         this.context = context;
-        this.item_layout = item_layout;
-        this.newProducts = newProducts;
+        this.item_gridview = item_gridview;
+        this.productList = productList;
     }
 
     @Override
     public int getCount() {
-        return newProducts.size();
+        return productList.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return newProducts.get(i);
+        return productList.get(i);
     }
 
     @Override
@@ -42,29 +44,32 @@ public class NewProductAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        ViewHolder holder;
-        if (view == null){
-            //link item view
-            holder = new ViewHolder();
+        ProductAdapter.ViewHolder holder;
+        if(view == null){
+            holder = new ProductAdapter.ViewHolder();
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(item_layout, null);
-            holder.imvProductImage = view.findViewById(R.id.imvNew);
-            holder.txtName = view.findViewById(R.id.txtNew);
-            holder.txtPrice = view.findViewById(R.id.txtGia);
+            view = inflater.inflate(item_gridview, null);
+            holder.imvThumb = view.findViewById(R.id.imvThumb);
+            holder.txtName = view.findViewById(R.id.txtName);
+            holder.txtPrice = view.findViewById(R.id.txtPrice);
+            holder.btnUnit = view.findViewById(R.id.btnUnit);
 
             view.setTag(holder);
-        }else {
-            holder = (ViewHolder) view.getTag();
+        }else{
+            holder = (ProductAdapter.ViewHolder) view.getTag();
         }
 
-        NewProductItems b = newProducts.get(i);
-        holder.imvProductImage.setImageResource(b.getProductImage());
-        holder.txtName.setText(b.getProductName());
-        holder.txtPrice.setText(b.getProductPrice());
+        Product product = productList.get(i);
+        holder.imvThumb.setImageResource(product.getThumb());
+        holder.txtName.setText(product.getName());
+        holder.txtPrice.setText(product.getPrice());
+
         return view;
+
     }
     public static class ViewHolder{
-        ImageView imvProductImage;
-        TextView txtName,txtPrice;
+        ImageView imvThumb;
+        TextView txtName, txtPrice;
+        MaterialButton btnUnit;
     }
 }

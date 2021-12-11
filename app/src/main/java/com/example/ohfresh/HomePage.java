@@ -15,10 +15,12 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.example.adapter.BestSellingAdapter;
 import com.example.adapter.NewProductAdapter;
+import com.example.adapter.ProductAdapter;
 import com.example.adapter.SliderAdapter;
 import com.example.adapter.VeggiesAdapter;
 import com.example.model.BestSellingItems;
 import com.example.model.NewProductItems;
+import com.example.model.Product;
 import com.example.model.VeggiesItems;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
@@ -42,8 +44,11 @@ public class HomePage extends AppCompatActivity {
     BestSellingAdapter bslAdapter;
     //GridViewNewProduct
     GridView gvNewProduct;
-    ArrayList<NewProductItems> newProducts;
-    NewProductAdapter npAdapter;
+//    ArrayList<NewProductItems> newProducts;
+//    NewProductAdapter npAdapter;
+    GridView gvProduct;
+    ArrayList<Product> products;
+    NewProductAdapter npadapter;
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -73,12 +78,21 @@ public class HomePage extends AppCompatActivity {
         bestSellingItems.add(new BestSellingItems(R.drawable.img_tomato,"Cà chua"));
         bestSellingItems.add(new BestSellingItems(R.drawable.img_corn,"Ngô Mỹ"));
         //NewProduct
-        newProducts = new ArrayList<NewProductItems>();
-        newProducts.add(new NewProductItems(R.drawable.img_atiso, "Atiso", "45.000 vnđ"));
-        newProducts.add(new NewProductItems(R.drawable.img_peach, "Đào", "65.000 vnđ"));
-        newProducts.add(new NewProductItems(R.drawable.img_raspberry, "Mâm xôi", "85.000 vnđ"));
-        newProducts.add(new NewProductItems(R.drawable.img_blueberry, "Việt quất", "85.000 vnđ"));
-
+//        newProducts = new ArrayList<NewProductItems>();
+//        newProducts.add(new NewProductItems(R.drawable.img_atiso, "Atiso", "45.000 vnđ"));
+//        newProducts.add(new NewProductItems(R.drawable.img_peach, "Đào", "65.000 vnđ"));
+//        newProducts.add(new NewProductItems(R.drawable.img_raspberry, "Mâm xôi", "85.000 vnđ"));
+//        newProducts.add(new NewProductItems(R.drawable.img_blueberry, "Việt quất", "85.000 vnđ"));
+        products = new ArrayList<Product>();
+        products.add(new Product(R.drawable.img_apple, "Táo", "35000", "KG"));
+        products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
+        products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
+        products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));
+        products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
+        products.add(new Product(R.drawable.img_atiso, "Atiso", "35000", "Hoa"));
+        products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
+        products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
+        products.add(new Product(R.drawable.img_raspberry, "Mâm xôi", "35000", "KG"));
     }
 
     private void setSlider() {
@@ -110,9 +124,10 @@ public class HomePage extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(HomePage.this, RecyclerView.HORIZONTAL, false);
         rclBestSelling.setLayoutManager(linearLayoutManager1);
         //loadDataNewProduct
-        npAdapter = new NewProductAdapter(HomePage.this, R.layout.item_newproduct, newProducts);
-        gvNewProduct.setAdapter(npAdapter);
-
+//        npAdapter = new NewProductAdapter(HomePage.this, R.layout.item_newproduct, newProducts);
+//        gvNewProduct.setAdapter(npAdapter);
+        npadapter = new NewProductAdapter(HomePage.this, R.layout.item_newproduct, products);
+        gvNewProduct.setAdapter(npadapter);
     }
     private void configureNavigation() {
         bottomNavigationView.setSelectedItemId(R.id.navHomepage);
