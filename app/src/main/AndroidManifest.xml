@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".Offer"
+            android:exported="true" />
+        <activity
             android:name=".UserPolicy"
             android:exported="true" />
         <activity
             android:name=".MemberRank"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Chatting"
             android:exported="true" />
@@ -27,11 +30,7 @@
         <activity
             android:name=".Category"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ProductDetail"
@@ -54,26 +53,30 @@
         <activity
             android:name=".Login"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Register"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ResetPassword"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".OTPVerify"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ForgetPassword"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Notification"
             android:exported="true" />
         <activity
             android:name=".Account"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

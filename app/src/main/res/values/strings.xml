@@ -5,7 +5,6 @@
     <string name="category">Danh mục</string>
     <string name="notification">Thông báo</string>
     <string name="account">Tài khoản</string>
-    <string name="noNotification">Bạn chưa có thông báo nào</string>
     <string name="fruit">Cherry</string>
     <string name="price">17.000</string>
     <string name="unit">KG</string>
@@ -186,4 +185,12 @@
         <br>\n</br>
         <br>Khách hàng có quyền gửi khiếu nại về việc lộ thông tin các nhân cho bên thứ ba đến Ban quản trị của Sàn TMĐT Foodmap.asia. Khi tiếp nhận những phản hồi này, Foodmap.asia sẽ xác nhận lại thông tin, phải có trách nhiệm trả lời lý do và hướng dẫn Khách hàng khôi phục và bảo mật lại thông tin.\n</br>
     </string>
+
+    <!-- Notification -->
+    <string-array name="offers">
+        <item>Oh!Fresh đang nhớ bạn lắm nè!</item>
+        <item>Ở nhà an toàn, cần gì cứ Oh!Fresh!</item>
+        <item>Oh!Fresh giảm 90k - CHỈ TRONG HÔM NAY</item>
+        <item>Siêu sale 12.12 - Ưu đãi như cho</item>
+    </string-array>
 </resources>
