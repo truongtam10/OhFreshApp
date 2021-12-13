@@ -16,14 +16,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_back"
-            android:background="#ffffff"/>
-
         <androidx.appcompat.widget.SearchView
-            android:layout_width="300dp"
+            android:layout_width="330dp"
             android:layout_height="40dp"
             android:clickable="true"
             android:paddingLeft="10dp"
@@ -103,7 +97,7 @@
     <GridView
         android:id="@+id/gvProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="1"
         android:numColumns="2"
