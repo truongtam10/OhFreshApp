@@ -57,7 +57,9 @@
             android:text="Tất cả"
             android:textColor="#fff"
             android:textSize="10dp"
-            app:cornerRadius="15dp"/>
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="1dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnVegetable"

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,6 +40,16 @@ public class Category extends AppCompatActivity {
         btnAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnAll.setBackgroundColor(Color.parseColor("#00B761"));
+                btnAll.setTextColor(Color.parseColor("#ffffff"));
+
+                btnVegetable.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnVegetable.setTextColor(Color.parseColor("#00B761"));
+                btnSeed.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnSeed.setTextColor(Color.parseColor("#00B761"));
+                btnFruit.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnFruit.setTextColor(Color.parseColor("#00B761"));
+
                 initData();
                 loadData();
             }
@@ -47,6 +58,16 @@ public class Category extends AppCompatActivity {
         btnVegetable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnVegetable.setBackgroundColor(Color.parseColor("#00B761"));
+                btnVegetable.setTextColor(Color.parseColor("#ffffff"));
+
+                btnAll.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnAll.setTextColor(Color.parseColor("#00B761"));
+                btnSeed.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnSeed.setTextColor(Color.parseColor("#00B761"));
+                btnFruit.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnFruit.setTextColor(Color.parseColor("#00B761"));
+
                 products = new ArrayList<Product>();
                 products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17.000", "KG"));
                 products.add(new Product(R.drawable.img_atiso, "Atiso", "35.000", "Hoa"));
@@ -63,6 +84,16 @@ public class Category extends AppCompatActivity {
         btnFruit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnFruit.setBackgroundColor(Color.parseColor("#00B761"));
+                btnFruit.setTextColor(Color.parseColor("#ffffff"));
+
+                btnAll.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnAll.setTextColor(Color.parseColor("#00B761"));
+                btnSeed.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnSeed.setTextColor(Color.parseColor("#00B761"));
+                btnVegetable.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnVegetable.setTextColor(Color.parseColor("#00B761"));
+
                 products = new ArrayList<Product>();
                 products.add(new Product(R.drawable.img_peach, "Đào", "50.000", "KG"));
                 products.add(new Product(R.drawable.img_apple, "Táo", "35.000", "KG"));
@@ -78,6 +109,16 @@ public class Category extends AppCompatActivity {
         btnSeed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnSeed.setBackgroundColor(Color.parseColor("#00B761"));
+                btnSeed.setTextColor(Color.parseColor("#ffffff"));
+
+                btnAll.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnAll.setTextColor(Color.parseColor("#00B761"));
+                btnVegetable.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnVegetable.setTextColor(Color.parseColor("#00B761"));
+                btnFruit.setBackgroundColor(Color.parseColor("#ffffff"));
+                btnFruit.setTextColor(Color.parseColor("#00B761"));
+
                 products = new ArrayList<Product>();
                 products.add(new Product(R.drawable.img_cashew, "Hạt điều", "50.000", "KG"));
                 products.add(new Product(R.drawable.img_chia, "Hạt Chia", "35.000", "KG"));
