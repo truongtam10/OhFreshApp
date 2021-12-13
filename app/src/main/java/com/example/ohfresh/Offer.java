@@ -36,7 +36,7 @@ public class Offer extends AppCompatActivity {
                 + "<br><br>" + "\uD83D\uDC49 Đừng quên nhập mã nè:"
                 + "<br>" + "<font color=#FF9330><b>\uD83C\uDF89 GAPLAI60 \uD83C\uDF89</b></font> <font color=#00B761>giảm ngay 60k</font> cho đơn hàng từ 120k."
                 + "<br>" + "<font color=#FF9330><b>\uD83C\uDF89 GAPLAI90 \uD83C\uDF89</b></font> <font color=#00B761>giảm ngay 90k</font> cho đơn hàng từ 200k."
-                + "<br><br>" + "\uD83D\uDE0D Cần gì thì cứ <font color=#00B761>Oh!Fresh thôi!</font>";
+                + "<br><br>" + "\uD83D\uDE0D Cần gì thì cứ <font color=#00B761>Oh!Fresh thôi!</font>" + "<br>";
         txtOfferContent.setText(Html.fromHtml(text));
     }
 

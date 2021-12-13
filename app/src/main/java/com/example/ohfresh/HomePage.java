@@ -25,6 +25,7 @@ import com.example.model.NewProductItems;
 import com.example.model.Product;
 import com.example.model.VeggiesItems;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -140,7 +141,7 @@ public class HomePage extends AppCompatActivity {
     private void configureNavigation() {
         bottomNavigationView.setSelectedItemId(R.id.navHomepage);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {

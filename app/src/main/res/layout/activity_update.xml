@@ -46,8 +46,11 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/clButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/clTitle">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -444,53 +447,52 @@
                     app:layout_constraintStart_toStartOf="@+id/txtMethod"
                     app:layout_constraintTop_toBottomOf="@+id/txtMethod" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/clButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/lnPaymentMethod">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnRate"
-                    android:layout_width="175dp"
-                    android:layout_height="55dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="8dp"
-                    app:strokeColor="@color/mainGreen"
-                    app:strokeWidth="2dp"
-                    android:backgroundTint="@color/white"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:gravity="center"
-                    android:text="Đánh giá"
-                    android:textAllCaps="false"
-                    android:textColor="@color/mainGreen"
-                    android:textSize="18sp"
-                    app:cornerRadius="10dp"
-                    android:shadowColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnRebuy"
-                    android:layout_width="175dp"
-                    android:layout_height="55dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:backgroundTint="@color/mainGreen"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:gravity="center"
-                    android:text="Mua lại"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    app:cornerRadius="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRate"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="2dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Đánh giá"
+            android:textAllCaps="false"
+            android:textColor="@color/mainGreen"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            android:shadowColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRebuy"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/mainGreen"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Mua lại"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

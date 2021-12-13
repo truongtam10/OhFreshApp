@@ -8,20 +8,23 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TabHost;
 
+import com.example.adapter.NotificationAdapter;
+import com.example.model.NotificationItems;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
+import java.util.ArrayList;
 
 public class Notification extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     TabHost thNotification;
     ListView lvOffer, lvUpdate;
-    String[] offers, updates;
-    ArrayAdapter<String> adapterOffer, adapterUpdate;
+    NotificationAdapter adapterOffer, adapterUpdate;
+    ArrayList<NotificationItems> offers, updates;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class Notification extends AppCompatActivity {
 
         linkViews();
         configureNavigation();
+        initData();
         loadData();
         addEvents();
     }
@@ -43,11 +47,17 @@ public class Notification extends AppCompatActivity {
         createTab();
     }
 
+    private void initData() {
+        offers = new ArrayList<>();
+        offers.add(new NotificationItems(R.drawable.ic_offer, "Ưu đãi", "Oh!Fresh đang nhớ bạn lắm nè", "08:53"));
+
+        updates = new ArrayList<>();
+        updates.add(new NotificationItems(R.drawable.ic_update, "Cập nhật đơn hàng", "Đơn hàng 12345678 của bạn đã đư...", "12:34"));
+    }
+
     private void loadData() {
-        offers = getResources().getStringArray(R.array.offers);
-        updates = getResources().getStringArray(R.array.updates);
-        adapterOffer = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,offers);
-        adapterUpdate = new ArrayAdapter<String>(Notification.this, android.R.layout.simple_list_item_1,updates);
+        adapterOffer = new NotificationAdapter(Notification.this, R.layout.notification_layout,offers);
+        adapterUpdate = new NotificationAdapter(Notification.this, R.layout.notification_layout,updates);
         lvOffer.setAdapter(adapterOffer);
         lvUpdate.setAdapter(adapterUpdate);
     }
@@ -89,7 +99,7 @@ public class Notification extends AppCompatActivity {
     private void configureNavigation() {
         bottomNavigationView.setSelectedItemId(R.id.navNotification);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId())
