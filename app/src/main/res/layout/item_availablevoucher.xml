@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_corner">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Oh!Fresh"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:background="@color/mainGreen"
+                android:textSize="16sp"
+                android:paddingHorizontal="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm "
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtAmountDiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30k"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hạn sử dụng đến ngày "
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDateExpiration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01/01/2022"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtApplyVoucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sử dụng"
+                    android:gravity="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>
