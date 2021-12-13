@@ -49,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAll"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
@@ -56,9 +57,12 @@
             android:text="Tất cả"
             android:textColor="#fff"
             android:textSize="10dp"
-            app:cornerRadius="15dp"/>
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="1dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVegetable"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             app:cornerRadius="15dp"
@@ -71,6 +75,7 @@
             android:layout_marginRight="10dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFruit"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             app:cornerRadius="15dp"
@@ -83,6 +88,7 @@
             android:layout_marginRight="10dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeed"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             app:cornerRadius="15dp"
