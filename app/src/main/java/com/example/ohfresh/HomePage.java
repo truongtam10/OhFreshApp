@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -53,6 +54,7 @@ public class HomePage extends AppCompatActivity {
     NewProductAdapter npadapter;
     BottomNavigationView bottomNavigationView;
     ImageButton btnChat, btnCart;
+    TextView txtMoreNewProduct, txtMoreBestSeller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,11 +85,6 @@ public class HomePage extends AppCompatActivity {
         bestSellingItems.add(new BestSellingItems(R.drawable.img_tomato,"Cà chua"));
         bestSellingItems.add(new BestSellingItems(R.drawable.img_corn,"Ngô Mỹ"));
         //NewProduct
-//        newProducts = new ArrayList<NewProductItems>();
-//        newProducts.add(new NewProductItems(R.drawable.img_atiso, "Atiso", "45.000 vnđ"));
-//        newProducts.add(new NewProductItems(R.drawable.img_peach, "Đào", "65.000 vnđ"));
-//        newProducts.add(new NewProductItems(R.drawable.img_raspberry, "Mâm xôi", "85.000 vnđ"));
-//        newProducts.add(new NewProductItems(R.drawable.img_blueberry, "Việt quất", "85.000 vnđ"));
         products = new ArrayList<Product>();
         products.add(new Product(R.drawable.img_apple, "Táo", "35000", "KG"));
         products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
@@ -95,9 +92,9 @@ public class HomePage extends AppCompatActivity {
         products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));
         products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
         products.add(new Product(R.drawable.img_atiso, "Atiso", "35000", "Hoa"));
-        products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
-        products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
-        products.add(new Product(R.drawable.img_raspberry, "Mâm xôi", "35000", "KG"));
+//        products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
+//        products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
+//        products.add(new Product(R.drawable.img_raspberry, "Mâm xôi", "35000", "KG"));
     }
 
     private void setSlider() {
@@ -117,6 +114,8 @@ public class HomePage extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.navigation);
         btnChat = findViewById(R.id.btnChat);
         btnCart = findViewById(R.id.btnCart);
+        txtMoreBestSeller = findViewById(R.id.txtMoreBestSeller);
+        txtMoreNewProduct = findViewById(R.id.txtMoreNewProduct);
     }
 
     private void loadData() {
@@ -181,6 +180,14 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HomePage.this, Cart.class);
                 startActivity(intent);
+            }
+        });
+
+        txtMoreNewProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(HomePage.this, MoreNewProduct.class);
+            startActivity(intent);
             }
         });
     }
