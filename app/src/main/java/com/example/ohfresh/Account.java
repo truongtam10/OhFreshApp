@@ -14,7 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy;
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class Account extends AppCompatActivity {
         lnRank= findViewById(R.id.lnRank);
         lnDelivering= findViewById(R.id.lnDelivering);
         lnPolicy = findViewById(R.id.lnPolicy);
+        lnLogout = findViewById(R.id.lnLogout);
     }
 
     private void configureNavigation() {
@@ -98,6 +99,14 @@ public class Account extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Account.this, UserPolicy.class);
+                startActivity(intent);
+            }
+        });
+
+        lnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Login.class);
                 startActivity(intent);
             }
         });

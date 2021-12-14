@@ -2,6 +2,7 @@ package com.example.ohfresh;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,14 +41,19 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (edtUserName.getText().toString().trim().isEmpty()
-                    && edtEmail.getText().toString().trim().isEmpty()
-                    && edtPhoneInput.getText().toString().trim().isEmpty()
-                    && edtPassword.getText().toString().trim().isEmpty()
-                    && edtRePassword.getText().toString().trim().isEmpty()){
+                    || edtEmail.getText().toString().trim().isEmpty()
+                    || edtPhoneInput.getText().toString().trim().isEmpty()
+                    || edtPassword.getText().toString().trim().isEmpty()
+                    || edtRePassword.getText().toString().trim().isEmpty()){
 
                     Toast.makeText(Register.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                     return;
 
+                }else{
+                    Toast.makeText(Register.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Register.this, Login.class);
+                    startActivity(intent);
+                    return;
                 }
             }
         });
