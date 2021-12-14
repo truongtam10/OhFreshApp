@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".MoreBestSeller"
+            android:exported="true" />
+        <activity
             android:name=".Update"
             android:exported="true" />
         <activity
@@ -17,6 +23,9 @@
             android:exported="true" />
         <activity
             android:name=".UserPolicy"
+            android:exported="true" />
+        <activity
+            android:name=".MoreNewProduct"
             android:exported="true" />
         <activity
             android:name=".MemberRank"
@@ -32,7 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".Category"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ProductDetail"
             android:exported="true" />

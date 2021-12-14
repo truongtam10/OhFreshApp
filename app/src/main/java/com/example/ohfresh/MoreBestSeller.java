@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
-public class MoreNewProduct extends AppCompatActivity {
+public class MoreBestSeller extends AppCompatActivity {
     GridView gvProduct;
     ArrayList<Product> products;
     ProductAdapter adapter;
@@ -26,8 +26,7 @@ public class MoreNewProduct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_more_new_product);
-
+        setContentView(R.layout.activity_more_best_seller);
         linkViews();
         initData();
         loadData();
@@ -36,7 +35,7 @@ public class MoreNewProduct extends AppCompatActivity {
     }
 
     private void linkViews() {
-        gvProduct = findViewById(R.id.gvMoreProduct);
+        gvProduct = findViewById(R.id.gvMoreBestSeller);
         bottomNavigationView = findViewById(R.id.navigation);
         imbBack = findViewById(R.id.imbBack);
         imbCart = findViewById(R.id.imbCart);
@@ -55,7 +54,7 @@ public class MoreNewProduct extends AppCompatActivity {
     }
 
     private void loadData() {
-        adapter = new ProductAdapter(MoreNewProduct.this, R.layout.item_layout, products);
+        adapter = new ProductAdapter(MoreBestSeller.this, R.layout.item_layout, products);
         gvProduct.setAdapter(adapter);
     }
 
@@ -69,7 +68,7 @@ public class MoreNewProduct extends AppCompatActivity {
         imbCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MoreNewProduct.this,Cart.class);
+                Intent intent = new Intent(MoreBestSeller.this,Cart.class);
                 startActivity(intent);
             }
         });

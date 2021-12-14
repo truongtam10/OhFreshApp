@@ -90,10 +90,9 @@ public class HomePage extends AppCompatActivity {
         products.add(new Product(R.drawable.img_apple, "Táo", "35000", "KG"));
         products.add(new Product(R.drawable.img_banana, "Chuối", "15000", "KG"));
         products.add(new Product(R.drawable.img_cherry, "Cherry", "40000", "KG"));
-        products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));
-        products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
+        products.add(new Product(R.drawable.img_cabbage, "Bắp cải", "17000", "KG"));products.add(new Product(R.drawable.img_strawberry, "Dâu tây", "35000", "KG"));
         products.add(new Product(R.drawable.img_atiso, "Atiso", "35000", "Hoa"));
-//        products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
+        products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
 //        products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
 //        products.add(new Product(R.drawable.img_raspberry, "Mâm xôi", "35000", "KG"));
     }
@@ -186,9 +185,17 @@ public class HomePage extends AppCompatActivity {
 
         txtMoreNewProduct.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-            Intent intent = new Intent(HomePage.this, MoreNewProduct.class);
-            startActivity(intent);
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, MoreNewProduct.class);
+                startActivity(intent);
+            }
+        });
+
+        txtMoreBestSeller.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this,MoreBestSeller.class);
+                startActivity(intent);
             }
         });
     }
