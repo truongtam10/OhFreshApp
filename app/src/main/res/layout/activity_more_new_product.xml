@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category"
+    tools:context=".MoreNewProduct"
     android:paddingTop="10dp">
     <ScrollView
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             <GridView
                 android:id="@+id/gvMoreProduct"
                 android:layout_width="match_parent"
-                android:layout_height="850dp"
+                android:layout_height="820dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:numColumns="2"
