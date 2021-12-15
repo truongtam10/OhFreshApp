@@ -26,6 +26,7 @@ public class FragmentMyvoucher extends Fragment {
         View view= inflater.inflate(R.layout.fragment_myvoucher, container, false);
         lvMyVoucher = view.findViewById(R.id.lvMyVoucher);
         adapter = new MyVoucherAdapter(getContext(),R.layout.item_voucher,initData());
+        lvMyVoucher.setAdapter(adapter);
         return view;
     }
 
