@@ -28,12 +28,13 @@
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/imvBannerIntroduce"
         tools:layout_editor_absoluteX="0dp" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnLink"
+    <TextView
+        android:id="@+id/txtLink"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://ohfresh.com:4366/referral..."
+        android:layout_height="36dp"
+        android:text="https://ohfresh.com:4366/referral/M3la1...."
         app:layout_constraintTop_toBottomOf="@id/textViewLink"
+        android:background="@drawable/item_corner"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
@@ -42,22 +43,24 @@
         android:fontFamily="@font/montserrat_light"
         android:textSize="12sp"
         android:textAllCaps="false"
+        android:padding="10dp"
         />
 
     <com.google.android.material.button.MaterialButton
-        Of="@id/btnLink"
+        android:id="@+id/btnLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/mainGreen"
         android:fontFamily="@font/montserrat_regular"
         android:text="Sao chép"
-        android:textSize="14sp"
         android:textAllCaps="false"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btnLink"
+        app:layout_constraintLeft_toRightOf="@id/txtLink"
         app:layout_constraintTop_toBottomOf="@id/textViewLink" />
+
     <TextView
         android:id="@+id/textViewCode"
         android:layout_width="wrap_content"
@@ -68,12 +71,12 @@
         android:text="Mã giới thiệu của bạn"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/btnLink"
+        app:layout_constraintTop_toBottomOf="@id/txtLink"
         app:layout_constraintStart_toStartOf="parent"/>
-    <com.google.android.material.button.MaterialButton
+    <TextView
         android:id="@+id/btnCode"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text="0979318567"
         app:layout_constraintTop_toBottomOf="@id/textViewCode"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -82,6 +85,8 @@
         android:backgroundTint="@color/mainLightGray"
         android:textColor="@color/black"
         android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/item_corner"
+        android:gravity="center"
         android:textSize="14sp"
         />
     <TextView
@@ -94,7 +99,7 @@
         android:text="Quét mã QR Code"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/btnLink"
+        app:layout_constraintTop_toBottomOf="@id/txtLink"
         app:layout_constraintEnd_toEndOf="parent"/>
     <ImageView
         android:layout_width="wrap_content"
