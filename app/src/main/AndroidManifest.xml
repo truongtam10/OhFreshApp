@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".SettingNotify"
+            android:exported="true" />
+        <activity
+            android:name=".SettingChat"
+            android:exported="true" />
+        <activity
+            android:name=".SettingCard"
+            android:exported="true" />
+        <activity
+            android:name=".SettingAddress"
+            android:exported="true" />
+        <activity
+            android:name=".SettingProfile"
+            android:exported="true" />
+        <activity
             android:name=".Settings"
             android:exported="true" />
         <activity

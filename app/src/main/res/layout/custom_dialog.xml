@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_ant_design_question_support"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc chắn muốn xóa tài khoản?"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/mainGray"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/imbNo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:layout_marginRight="0dp"
+            android:backgroundTint="@color/light_gray"/>
+        <ImageButton
+            android:id="@+id/imbOk"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_check"
+            android:backgroundTint="@color/light_gray"/>
+    </LinearLayout>
+
+</LinearLayout>

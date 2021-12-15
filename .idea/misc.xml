@@ -70,18 +70,31 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/mipmap-anydpi-v26/rank_member_img.xml" value="0.14635416666666667" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_ant_design_question_support.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_check.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_dislike.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_eye_closed.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/ic_profile_1.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_category.xml" value="0.1796875" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_checkout.xml" value="0.1796875" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.1037037037037037" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_member_rank.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_more_best_seller.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_more_new_product.xml" value="0.12" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_product_detail.xml" value="0.1796875" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_register.xml" value="0.1796875" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_settings.xml" value="0.1796875" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_address.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_card.xml" value="0.22" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_chat.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_notify.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_settings.xml" value="0.20095693779904306" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/cart_itemlayout.xml" value="0.1796875" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/custom_dialog.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/fragment_search.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_layout.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_newproduct.xml" value="0.1" />
