@@ -66,7 +66,8 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:paddingRight="10dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -91,23 +92,22 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_regular"
                         android:text="Oh Fresh"
-                        android:textSize="15sp"
-                        android:paddingLeft="10dp"/>
+                        android:textSize="15sp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_regular"
                         android:text="0123456789"
-                        android:textSize="15sp"
-                        android:paddingLeft="10dp"/>
+                        android:textSize="15sp"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -115,8 +115,7 @@
                         android:fontFamily="@font/montserrat_regular"
                         android:justificationMode="inter_word"
                         android:text="xxxx, Trường Đại học Kinh tế - Luật, ĐHQG TPHCM, Thành phố Thủ Đức, TPHCM"
-                        android:textSize="15sp"
-                        android:paddingLeft="10dp"/>
+                        android:textSize="15sp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -265,11 +264,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:paddingVertical="10dp"
                     android:stretchColumns="1"
-                    android:paddingLeft="10dp">
+                    android:paddingHorizontal="10dp">
 
-                    <TableRow>
+                    <TableRow android:layout_marginBottom="7dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -287,7 +285,7 @@
                             android:textSize="14sp" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow android:layout_marginBottom="7dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -315,7 +313,7 @@
                             android:textStyle="italic" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow android:layout_marginBottom="7dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -345,7 +343,7 @@
                     </TableRow>
 
 
-                    <TableRow>
+                    <TableRow android:layout_marginBottom="7dp">
 
                         <TextView
                             android:id="@+id/txtShippingFee"
@@ -373,7 +371,7 @@
                             android:textStyle="italic" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow >
 
                         <TextView
                             android:id="@+id/txtTotal"

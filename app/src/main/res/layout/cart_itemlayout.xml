@@ -3,10 +3,10 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="5dp"
+    android:layout_marginVertical="10dp"
     android:padding="10dp"
     android:gravity="center_vertical"
-    android:background="@drawable/item_corner">
+    >
 
     <CheckBox
         android:id="@+id/cboCheckBox"
@@ -20,7 +20,7 @@
         android:layout_height="75dp"
         android:scaleType="fitXY"
         android:src="@drawable/img_caingot"
-        android:layout_marginHorizontal="15dp"/>
+        android:layout_marginRight="15dp"/>
     <LinearLayout
         android:layout_width="80dp"
         android:layout_height="wrap_content"
@@ -95,7 +95,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="5dp"
-        android:gravity="end">
+        android:gravity="end"
+        android:layout_gravity="center_vertical">
 
         <ImageButton
             android:id="@+id/btnMinus"
