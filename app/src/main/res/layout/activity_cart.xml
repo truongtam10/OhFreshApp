@@ -19,6 +19,7 @@
         android:paddingBottom="10dp"
         >
         <ImageButton
+            android:id="@+id/btnReturnOutCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
@@ -225,24 +226,26 @@
                     android:gravity="center"
                     android:fontFamily="@font/montserrat_bold"
                     android:textSize="16sp"
+                    android:layout_marginRight="10dp"
                     />
 
-                <EditText
+                <TextView
+                    android:id="@+id/txtSelectVoucherCart"
                     android:layout_height="40dp"
                     android:layout_width="match_parent"
                     android:textSize="16sp"
-                    android:hint="Có Voucher? Dùng ngay"
-                    android:gravity="center"
+                    android:text="Lấy voucher"
+                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="end"
                     android:fontFamily="@font/montserrat_regular"
-                    android:drawableStart="@drawable/ic_boxchecked"
-                    android:background="@drawable/item_corner"
-                    android:paddingStart="5dp"
+                    android:padding="10dp"
                     />
             </TableRow>
         </TableLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCheckOut"
+            android:id="@+id/btnCheckOutItem"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:text="Thanh toán"

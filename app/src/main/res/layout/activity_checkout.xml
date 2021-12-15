@@ -8,6 +8,7 @@
     android:padding="25dp"
     android:background="@color/white">
 
+
     <FrameLayout
         android:id="@+id/frmCheckout"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:paddingBottom="10dp">
 
         <ImageButton
+            android:id="@+id/btnReturnCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
@@ -32,8 +34,7 @@
             android:gravity="center"
             android:text="Thanh toán"
             android:textSize="20sp"
-            android:textColor="@color/black"
-            android:background="@color/white"/>
+            android:textColor="@color/black"/>
 
     </FrameLayout>
 
@@ -76,6 +77,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/txtChangeAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
@@ -172,16 +174,18 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <EditText
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/txtSelectVoucher"
                     android:layout_height="40dp"
-                    android:background="@drawable/item_corner"
-                    android:drawableStart="@drawable/ic_boxchecked"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="Lấy voucher"
+                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                    android:gravity="end"
+                    android:layout_gravity="center_vertical"
                     android:fontFamily="@font/montserrat_regular"
-                    android:gravity="center"
-                    android:hint="Có Voucher? Dùng ngay"
-                    android:paddingStart="5dp"
-                    android:textSize="16sp" />
+                    android:padding="10dp"
+                    />
             </LinearLayout>
 
             <View
@@ -197,14 +201,36 @@
                 android:layout_marginVertical="10dp"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:text="Phương thức thanh toán"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal"
+                    android:stretchColumns="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Phương thức thanh toán"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtChangePaymentMethod"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:textSize="16sp"
+                        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                        android:gravity="end"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rcvCheckoutPaymentMethods"
@@ -395,5 +421,6 @@
         android:backgroundTint="@color/mainGreen"
         android:textAllCaps="false"
         app:cornerRadius="10dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

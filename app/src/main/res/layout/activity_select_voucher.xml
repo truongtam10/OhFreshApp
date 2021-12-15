@@ -16,6 +16,7 @@
         android:paddingBottom="10dp">
 
         <ImageButton
+            android:id="@+id/btnReturnChangeVoucher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
@@ -90,7 +91,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnCheckOut"
+        android:id="@+id/btnSaveVoucher"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:text="Lưu"

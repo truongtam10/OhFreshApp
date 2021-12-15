@@ -84,9 +84,12 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_change_payment_method.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_checkout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_select_voucher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_update_address.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_availablevoucher.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_voucher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/payment_itemlayout.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
