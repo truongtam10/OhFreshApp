@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_corner">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Oh!Fresh"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:background="@drawable/item_corner_green"
+                android:textSize="16sp"
+                android:paddingHorizontal="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txtVoucherName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giảm 50%"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtVoucherValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đơn tối thiểu 50k giảm tối đa 25k"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/txtVoucherDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Có hiệu lực đến 20/10/2021 00:00"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textSize="12sp"
+                    android:textColor="@color/mainGray"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/txtUseVoucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dùng ngay"
+                    android:textColor="@color/mainGreen"
+                    android:gravity="end"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</LinearLayout>
