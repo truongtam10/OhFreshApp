@@ -2,6 +2,9 @@ package com.example.ohfresh;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,8 +17,8 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnLogout;
-
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnLogout, lnMyVoucher;
+    private FragmentManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,7 @@ public class Account extends AppCompatActivity {
         lnDelivering= findViewById(R.id.lnDelivering);
         lnPolicy = findViewById(R.id.lnPolicy);
         lnLogout = findViewById(R.id.lnLogout);
+        lnMyVoucher = findViewById(R.id.lnMyVoucher);
     }
 
     private void configureNavigation() {
@@ -108,6 +112,15 @@ public class Account extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Account.this, Login.class);
                 startActivity(intent);
+            }
+        });
+        lnMyVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//                transaction.replace(R.id.layoutContainer, new FragmentMyvoucher());
+//                transaction.commit();
             }
         });
     }

@@ -6,7 +6,7 @@
     android:background="@drawable/item_corner">
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="wrap_content"
         android:stretchColumns="1">
 
         <TableRow>
