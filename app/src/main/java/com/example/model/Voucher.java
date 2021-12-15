@@ -4,19 +4,19 @@ import java.io.Serializable;
 
 public class Voucher implements Serializable {
 
-    private int AmountDiscount;
+    private String AmountDiscount;
     private String DateExpiration;
 
-    public Voucher(int amountDiscount, String dateExpiration) {
+    public Voucher(String amountDiscount, String dateExpiration) {
         AmountDiscount = amountDiscount;
         DateExpiration = dateExpiration;
     }
 
-    public int getAmountDiscount() {
+    public String getAmountDiscount() {
         return AmountDiscount;
     }
 
-    public void setAmountDiscount(int amountDiscount) {
+    public void setAmountDiscount(String amountDiscount) {
         AmountDiscount = amountDiscount;
     }
 

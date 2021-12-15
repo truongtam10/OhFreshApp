@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:paddingBottom="10dp">
 
         <ImageButton
@@ -37,99 +39,83 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:orientation="vertical"
-        android:paddingVertical="50dp"
-        android:paddingHorizontal="20dp">
+        android:paddingVertical="70dp"
+        android:paddingHorizontal="30dp">
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:layout_height="wrap_content">
+
             <RadioButton
+                android:id="@+id/radCOD"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Thanh toán khi nhận hàng"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radInternetBanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thẻ ATM nội địa/Internet Banking"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radGlobalCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thẻ quốc tế ( Visa / JCB  / MasterCard )"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radMomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán bằng Momo"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
             <TextView
+                android:id="@+id/txtMomo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="16dp"
-                android:text="Thanh toán khi nhận hàng"/>
-        </LinearLayout>
+                android:textColor="#A80808"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
             <RadioButton
+                android:id="@+id/radZaloPay"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Thanh toán bằng ZaloPay"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:padding="10dp"/>
+
             <TextView
+                android:id="@+id/txtZaloPay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="16dp"
-                android:text="Thẻ ATM nội địa/Internet Banking"/>
-        </LinearLayout>
+                android:textColor="#A80808"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
-                android:text="Thẻ quốc tế ( Visa / MasterCard / JCB )"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
-                android:text="Thanh toán bằng Momo"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="16dp"
-            android:textColor="#A80808"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
-                android:text="Thanh toán bằng ZaloPay"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="16dp"
-            android:textColor="#A80808"/>
+        </RadioGroup>
 
     </LinearLayout>
 

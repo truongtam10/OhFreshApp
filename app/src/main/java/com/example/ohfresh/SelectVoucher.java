@@ -40,9 +40,9 @@ public class SelectVoucher extends AppCompatActivity {
 
     private void initData() {
         vouchers = new ArrayList<>();
-        vouchers.add(new Voucher(55000, "05/01/2022"));
-        vouchers.add(new Voucher(155000, "05/05/2022"));
-        vouchers.add(new Voucher(25000, "05/02/2022"));
+        vouchers.add(new Voucher("55k", "05/01/2022"));
+        vouchers.add(new Voucher("20k", "05/05/2022"));
+        vouchers.add(new Voucher("50% tối đa 50k", "05/02/2022"));
         adapter = new VoucherAdapter(getApplicationContext(), vouchers);
         rcvSelectVoucher.setAdapter(adapter);
     }
