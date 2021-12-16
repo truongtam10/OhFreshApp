@@ -5,7 +5,8 @@
     android:layout_height="60dp"
     android:gravity="center"
     android:background="@drawable/item_corner"
-    android:padding="5dp"
+    android:paddingLeft="10dp"
+    android:paddingVertical="5dp"
     android:layout_marginHorizontal="10dp"
     >
 

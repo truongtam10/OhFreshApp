@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentIntroduceFriend"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imvBannerIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_bannerintroduce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Link giới thiệu bạn bè"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/imvBannerIntroduce"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/txtLink"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="https://ohfresh.com:4366/referral/M3la1...."
+        app:layout_constraintTop_toBottomOf="@id/textViewLink"
+        android:background="@drawable/item_corner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/mainLightGray"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/mainGreen"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Sao chép"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtLink"
+        app:layout_constraintTop_toBottomOf="@id/textViewLink" />
+
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Mã giới thiệu của bạn"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txtLink"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/btnCode"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="0979318567"
+        app:layout_constraintTop_toBottomOf="@id/textViewCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/mainLightGray"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/item_corner"
+        android:gravity="center"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/textViewQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Quét mã QR Code"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txtLink"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_qrcode"
+        app:layout_constraintTop_toBottomOf="@id/textViewQR"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/textViewShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Chia sẻ"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btnCode"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"
+        app:layout_constraintTop_toBottomOf="@id/textViewShare"
+        app:layout_constraintLeft_toRightOf="@id/imvFacebook"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+    <ImageView
+        android:id="@+id/imvFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintTop_toBottomOf="@id/textViewShare"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

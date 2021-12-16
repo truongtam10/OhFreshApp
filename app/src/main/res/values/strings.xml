@@ -67,6 +67,7 @@
     <string name="txt_score_title">Bạn đang có</string>
     <string name="txt_score">44</string>
     <string name="txt_score_sub">điểm thưởng</string>
+    <string name="txt_rank_status">Current</string>
 
     <!--  Rank_member  -->
     <string name="txt_member_title">Lợi ích của bạn</string>
@@ -80,7 +81,7 @@
     <string name="silver_special_month_des">Nhận nhiều ưu đãi hàng tháng như giảm giá mua sắm, tiện ích...</string>
 
     <!--  Rank_gold  -->
-    <string name="gold_title">Hạng Vàng</string>
+    <string name="gold_title">Ưu đãi hạng Vàng</string>
     <string name="gold_score_title">Nhân 3 lần điểm thưởng khi là thành viên hạng Vàng</string>
     <string name="gold_delivery_prior">Ưu tiên giao hàng nhanh hơn so với thành viên hạng Bạc</string>
     <string name="gold_special">ƯU TIÊN HỖ TRỢ DÀNH RIÊNG CHO KHÁCH HÀNG HẠNG VÀNG</string>
@@ -199,5 +200,43 @@
         <item>Đơn hàng XXXXXXXX của bạn đã bị hủy</item>
         <item>Đơn hàng XXXXXXXX của bạn đã được giao thành công</item>
         <item>Đơn hàng XXXXXXXX của bạn đã đang được giao</item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="city_array">
+        <item>Hà Nội</item>
+        <item>TPHCM</item>
+        <item>Đà Nẵng</item>
+    </string-array>
+
+    <string-array name="district_array">
+        <item>Quận 1</item>
+        <item>Quận 2</item>
+        <item>Quận 3</item>
+        <item>Quận 4</item>
+        <item>Quận 5</item>
+        <item>Quận 6</item>
+        <item>Quận 7</item>
+        <item>Quận 8</item>
+        <item>Quận 9</item>
+        <item>Quận 10</item>
+        <item>Quận Gò Vấp</item>
+    </string-array>
+
+    <string-array name="ward_array">
+        <item>Phường 1</item>
+        <item>Phường 2</item>
+        <item>Phường 3</item>
+        <item>Phường 4</item>
+        <item>Phường 5</item>
+        <item>Phường 6</item>
     </string-array>
 </resources>

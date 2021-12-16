@@ -4,7 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.adapter.CartProductAdapter;
 import com.example.model.CartProduct;
@@ -17,6 +22,10 @@ public class Cart extends AppCompatActivity {
     ArrayList<CartProduct> products;
     CartProductAdapter adapter;
 
+    ImageView btnReturnOutCart;
+    Button btnCheckoutItem;
+    TextView txtSelectVoucherCart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +34,15 @@ public class Cart extends AppCompatActivity {
         linkViews();
         configRecyclerView();
         initData();
+        addEvent();
     }
 
     private void linkViews() {
+
         rcvProduct = findViewById(R.id.rcvProduct);
+        btnCheckoutItem = findViewById(R.id.btnCheckOutItem);
+        btnReturnOutCart = findViewById(R.id.btnReturnOutCart);
+        txtSelectVoucherCart = findViewById(R.id.txtSelectVoucherCart);
     }
 
     private void configRecyclerView() {
@@ -48,5 +62,31 @@ public class Cart extends AppCompatActivity {
         products.add(new CartProduct(R.drawable.img_blueberry, "Việt quất", 325000, 5, 1));
         adapter = new CartProductAdapter(getApplicationContext(), products);
         rcvProduct.setAdapter(adapter);
+    }
+
+    private void addEvent() {
+        btnReturnOutCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cart.this, HomePage.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCheckoutItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cart.this, Checkout.class);
+                startActivity(intent);
+            }
+        });
+
+        txtSelectVoucherCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cart.this, SelectVoucher.class);
+                startActivity(intent);
+            }
+        });
     }
 }

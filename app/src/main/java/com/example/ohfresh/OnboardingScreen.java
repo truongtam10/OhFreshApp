@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -20,6 +23,7 @@ public class OnboardingScreen extends AppCompatActivity {
     OnboardingAdapter onboardingAdapter;
     ViewPager2 onboardingViewPager;
     LinearLayout onboardingIndicators;
+    Button btnGetStarted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +42,14 @@ public class OnboardingScreen extends AppCompatActivity {
                 setCurrentIndicator(position);
             }
         });
+        addEvents();
     }
 
     private void linkViews() {
 
         onboardingViewPager = findViewById(R.id.onboardingViewPager);
         onboardingIndicators = findViewById(R.id.onboardingIndicators);
+        btnGetStarted = findViewById(R.id.btnGetStarted);
     }
 
     private void initData() {
@@ -105,6 +111,16 @@ public class OnboardingScreen extends AppCompatActivity {
                 );
             }
         }
+    }
+
+    private void addEvents(){
+        btnGetStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OnboardingScreen.this, Login.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

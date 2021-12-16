@@ -4,7 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.adapter.CartProductAdapter;
 import com.example.adapter.ItemCheckoutAdapter;
@@ -25,6 +30,10 @@ public class Checkout extends AppCompatActivity {
     ArrayList<CartProduct> products;
     ItemCheckoutAdapter itemCheckoutAdapter;
 
+    ImageView btnReturnCart;
+    Button btnCheckout;
+    TextView txtChangeAddress, txtSelectVoucher, txtChangePaymentMethod;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +44,8 @@ public class Checkout extends AppCompatActivity {
         configRecyclerViewItemCheckout();
         initDataPaymentMethod();
         initDataItemCheckout();
+
+        addEvent();
     }
 
     private void configRecyclerViewItemCheckout() {
@@ -51,6 +62,12 @@ public class Checkout extends AppCompatActivity {
 
         rcvPaymentMethod = findViewById(R.id.rcvCheckoutPaymentMethods);
         rcvCheckoutItem = findViewById(R.id.rcvCheckoutItem);
+
+        btnCheckout = findViewById(R.id.btnCheckOut);
+        btnReturnCart = findViewById(R.id.btnReturnCart);
+        txtChangeAddress = findViewById(R.id.txtChangeAddress);
+        txtSelectVoucher = findViewById(R.id.txtSelectVoucher);
+        txtChangePaymentMethod = findViewById(R.id.txtChangePaymentMethod);
     }
 
     private void initDataPaymentMethod() {
@@ -73,4 +90,49 @@ public class Checkout extends AppCompatActivity {
         itemCheckoutAdapter = new ItemCheckoutAdapter(getApplicationContext(), products);
         rcvCheckoutItem.setAdapter(itemCheckoutAdapter);
     }
+
+    private void addEvent() {
+
+
+        btnReturnCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Checkout.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Checkout.this, OrderSuccess.class);
+                startActivity(intent);
+            }
+        });
+
+        txtChangeAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Checkout.this, UpdateAddress.class);
+                startActivity(intent);
+            }
+        });
+
+        txtChangePaymentMethod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent);
+            }
+        });
+
+        txtSelectVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Checkout.this, SelectVoucher.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }

@@ -57,7 +57,7 @@ public class Login extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (edtPhoneInput.getText().toString().trim().isEmpty() && edtPassword.getText().toString().trim().isEmpty()){
+                if (edtPhoneInput.getText().toString().trim().isEmpty() || edtPassword.getText().toString().trim().isEmpty()){
                     Toast.makeText(Login.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                     return;
                 }

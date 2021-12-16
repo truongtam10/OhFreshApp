@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:stretchColumns="1"
+                android:background="@drawable/background_shadow">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="90dp"
+                        android:text="Oh!Fresh"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/item_corner_green"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="5dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giảm "
+                                android:fontFamily="@font/montserrat_bold"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/txtAmountDiscount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="30k"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hạn sử dụng đến ngày "
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/txtDateExpiration"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01/01/2022"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtApplyVoucher"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sử dụng"
+                            android:textColor="@color/mainGreen"
+                            android:gravity="end"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="14sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="15dp"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

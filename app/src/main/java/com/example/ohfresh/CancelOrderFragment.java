@@ -1,5 +1,6 @@
 package com.example.ohfresh;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +16,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class CancelOrderFragment extends Fragment {
+
+    Button btnReBuy2;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +62,16 @@ public class CancelOrderFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cancel_order, container, false);
+        View view = inflater.inflate(R.layout.fragment_cancel_order, container, false);
+//        btnReBuy2 = view.findViewById(R.id.btnReBuy2);
+//
+//        btnReBuy2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(), ProductDetail.class);
+//                startActivity(intent);
+//            }
+//        });
+        return view;
     }
 }

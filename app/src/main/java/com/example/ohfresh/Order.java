@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TabHost;
 
@@ -14,6 +15,7 @@ public class Order extends AppCompatActivity {
 
     TabHost tabHost;
     ImageView imvBack;
+    Button btnReBuy, btnRebuy2, btnRate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,12 @@ public class Order extends AppCompatActivity {
     private void linkViews(){
         imvBack = findViewById(R.id.imvBack);
         tabHost = findViewById(R.id.tabHost);
+        btnReBuy = findViewById(R.id.btnReBuy);
+        btnRebuy2 = findViewById(R.id.btnReBuy2);
+        btnRate = findViewById(R.id.btnRate);
+
+
+
         tabHost.setup();
         createTab();
     }
@@ -47,6 +55,33 @@ public class Order extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnReBuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Order.this, ProductDetail.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRebuy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Order.this, ProductDetail.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Order.this, Rating.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
     private void createTab(){
