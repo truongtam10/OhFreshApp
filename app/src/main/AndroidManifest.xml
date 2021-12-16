@@ -81,6 +81,33 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".MoreNewProduct"
+            android:exported="true" />
+        <activity
+            android:name=".MoreBestSeller"
+            android:exported="true" />
+        <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".SettingPassword"
+            android:exported="true" />
+        <activity
+            android:name=".SettingProfile"
+            android:exported="true" />
+        <activity
+            android:name=".SettingNotify"
+            android:exported="true" />
+        <activity
+            android:name=".SettingChat"
+            android:exported="true" />
+        <activity
+            android:name=".SettingCard"
+            android:exported="true" />
+        <activity
+            android:name=".SettingAddress"
+            android:exported="true" />
     </application>
 
 </manifest>
