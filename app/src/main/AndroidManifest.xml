@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".SettingPassword"
+            android:exported="true" />
+        <activity
             android:name=".SettingNotify"
             android:exported="true" />
         <activity

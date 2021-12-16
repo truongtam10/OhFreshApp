@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Settings extends AppCompatActivity {
-    LinearLayout lnProfile,lnAddress,lnCard,lnSettingChat, lnNotify, lnCancelAcc;
+    LinearLayout lnProfile,lnAddress,lnCard,lnSettingChat, lnNotify, lnCancelAcc, lnPassword;
+    ImageView imvBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,8 @@ public class Settings extends AppCompatActivity {
         lnSettingChat = findViewById(R.id.lnSettingChat);
         lnNotify = findViewById(R.id.lnNotify);
         lnCancelAcc = findViewById(R.id.lnCancelAcc);
+        imvBack = findViewById(R.id.imvBack);
+        lnPassword = findViewById(R.id.lnPassword);
     }
 
     public void openDialog(View view){
@@ -91,6 +95,22 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.this,SettingNotify.class);
+                startActivity(intent);
+            }
+        });
+
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.this,Account.class);
+                startActivity(intent);
+            }
+        });
+
+        lnPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Settings.this,SettingPassword.class);
                 startActivity(intent);
             }
         });

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingProfile">
+    tools:context=".SettingProfile"
+    android:id="@+id/settingProfile">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -76,52 +77,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imvPhoto">
 
-
-                    <LinearLayout
-                        android:id="@+id/lnName"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/montserrat_regular"
-                                android:text="Tên đăng nhập"
-                                android:textColor="@color/mainGray"
-                                android:textSize="15sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                android:fontFamily="@font/montserrat_regular"
-                                android:text="nguyentruongtam01"
-                                android:textColor="@color/black"
-                                android:textSize="13sp"/>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#C8C8D5"
-                        app:layout_constraintBottom_toBottomOf="@+id/lnRank" />
-
                     <LinearLayout
                         android:id="@+id/lnSex"
                         android:layout_width="match_parent"
@@ -172,13 +127,13 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#C8C8D5"
-                        app:layout_constraintBottom_toBottomOf="@+id/lnMyVoucher" />
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="#C8C8D5"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnMyVoucher" />-->
 
                     <LinearLayout
                         android:id="@+id/lnBirthday"
@@ -190,40 +145,45 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <EditText
+                                android:id="@+id/edtDate"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="5dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/montserrat_regular"
-                                android:text="Ngày sinh"
+                                android:paddingBottom="15dp"
+                                android:hint="Ngày sinh"
                                 android:textColor="@color/mainGray"
                                 android:textSize="15sp"
+                                android:inputType="date"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <ImageView
-                                android:id="@+id/imvNext5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_next" />
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:layout_editor_absoluteX="4dp" />
+
+
+                            <!--                            <ImageView-->
+<!--                                android:id="@+id/imvNext5"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_next" />-->
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#C8C8D5"
-                        app:layout_constraintBottom_toBottomOf="@+id/lnSupport" />
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="#C8C8D5"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnSupport" />-->
 
                     <LinearLayout
                         android:id="@+id/lnPhone"
@@ -236,38 +196,40 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <EditText
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/montserrat_regular"
-                                android:text="Điện thoại"
+                                android:hint="Điện thoại"
                                 android:textColor="@color/mainGray"
                                 android:textSize="15sp"
+                                android:paddingBottom="15dp"
+                                android:inputType="number"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <ImageView
-                                android:id="@+id/imvNext6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_next" />
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:layout_editor_absoluteX="4dp" />
+                            <!--                            <ImageView-->
+<!--                                android:id="@+id/imvNext6"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_next" />-->
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#C8C8D5"
-                        app:layout_constraintBottom_toBottomOf="@+id/lnPolicy" />
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="#C8C8D5"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnPolicy" />-->
 
                     <LinearLayout
                         android:id="@+id/lnCancelAcc"
@@ -279,73 +241,41 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <EditText
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/montserrat_regular"
-                                android:text="Email"
+                                android:hint="Email"
+                                android:paddingBottom="15dp"
                                 android:textColor="@color/mainGray"
                                 android:textSize="15sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <ImageView
-                                android:id="@+id/imvNext7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_next" />
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:layout_editor_absoluteX="4dp" />
+
+                            <!--                            <ImageView-->
+<!--                                android:id="@+id/imvNext7"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_next" />-->
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="0.5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="#C8C8D5"
-                        app:layout_constraintBottom_toBottomOf="@+id/lnPolicy" />
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="#C8C8D5"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnPolicy" />-->
 
-                    <LinearLayout
-                        android:id="@+id/lnPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/montserrat_regular"
-                                android:text="Thay đổi mật khẩu"
-                                android:textColor="@color/mainGray"
-                                android:textSize="15sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <ImageView
-                                android:id="@+id/imvNext8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_next" />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
