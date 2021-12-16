@@ -60,7 +60,7 @@ public class ProductAdapter extends BaseAdapter {
         }
 
         Product product = productList.get(i);
-//        holder.imvThumb.setImageResource(product.getThumb());
+        holder.imvThumb.setImageResource(product.getThumb());
         holder.txtName.setText(product.getName());
         holder.txtPrice.setText(product.getPrice());
 
