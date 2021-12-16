@@ -230,4 +230,13 @@
         <item>Quận 10</item>
         <item>Quận Gò Vấp</item>
     </string-array>
+
+    <string-array name="ward_array">
+        <item>Phường 1</item>
+        <item>Phường 2</item>
+        <item>Phường 3</item>
+        <item>Phường 4</item>
+        <item>Phường 5</item>
+        <item>Phường 6</item>
+    </string-array>
 </resources>
