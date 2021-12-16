@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnLogout, lnMyVoucher;
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnLogout, lnMyVoucher, lnRate;
     private FragmentManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,7 @@ public class Account extends AppCompatActivity {
         lnPolicy = findViewById(R.id.lnPolicy);
         lnLogout = findViewById(R.id.lnLogout);
         lnMyVoucher = findViewById(R.id.lnMyVoucher);
+        lnRate = findViewById(R.id.lnRate);
     }
 
     private void configureNavigation() {
@@ -74,6 +75,14 @@ public class Account extends AppCompatActivity {
     private void addEvents() {
 
         lnDelivering.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Order.class);
+                startActivity(intent);
+            }
+        });
+
+        lnRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Account.this, Order.class);

@@ -72,13 +72,13 @@ public class Order extends AppCompatActivity {
             }
         });
 
-//        btnRate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Order.this, Rating.class);
-//                startActivity(intent);
-//            }
-//        });
+        btnRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Order.this, Rating.class);
+                startActivity(intent);
+            }
+        });
 
 
 

@@ -67,6 +67,7 @@
     <string name="txt_score_title">Bạn đang có</string>
     <string name="txt_score">44</string>
     <string name="txt_score_sub">điểm thưởng</string>
+    <string name="txt_rank_status">Current</string>
 
     <!--  Rank_member  -->
     <string name="txt_member_title">Lợi ích của bạn</string>
@@ -80,7 +81,7 @@
     <string name="silver_special_month_des">Nhận nhiều ưu đãi hàng tháng như giảm giá mua sắm, tiện ích...</string>
 
     <!--  Rank_gold  -->
-    <string name="gold_title">Hạng Vàng</string>
+    <string name="gold_title">Ưu đãi hạng Vàng</string>
     <string name="gold_score_title">Nhân 3 lần điểm thưởng khi là thành viên hạng Vàng</string>
     <string name="gold_delivery_prior">Ưu tiên giao hàng nhanh hơn so với thành viên hạng Bạc</string>
     <string name="gold_special">ƯU TIÊN HỖ TRỢ DÀNH RIÊNG CHO KHÁCH HÀNG HẠNG VÀNG</string>

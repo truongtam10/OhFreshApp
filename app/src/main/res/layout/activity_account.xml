@@ -30,27 +30,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_back" />
-
                 <TextView
                     android:id="@+id/txtCanhan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="112dp"
+                    android:layout_marginStart="144dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/montserrat_bold"
                     android:text="Tài khoản"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
@@ -58,11 +48,10 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="30dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
                     app:srcCompat="@drawable/img_meo"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="70dp" />
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -244,6 +233,7 @@
                                     android:layout_weight="1">
 
                                     <LinearLayout
+                                        android:id="@+id/lnRate"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_marginStart="20dp"
