@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.adapter.CartProductAdapter;
 import com.example.adapter.VoucherAdapter;
@@ -65,8 +66,7 @@ public class SelectVoucher extends AppCompatActivity {
         btnReturnVoucher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SelectVoucher.this, Checkout.class);
-                startActivity(intent);
+                finish();
             }
         });
 

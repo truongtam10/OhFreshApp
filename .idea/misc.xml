@@ -42,6 +42,20 @@
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/fragment_privacy_policy.xml" value="0.14743589743589744" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/fragment_term_of_use.xml" value="0.3293051359516616" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/rank_member.xml" value="0.22" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/drawable/item_corner.xml" value="0.2890625" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/drawable/item_corner_green.xml" value="0.2890625" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/activity_offer.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/activity_select_voucher.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/fragment_introduce_friend.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/fragment_myvoucher.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_availablevoucher.xml" value="0.4" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_bestselling.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_newproduct.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_onboarding_container.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_product.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_veggies.xml" value="0.27291666666666664" />
+        <entry key="..\:/HOCTAP/HK5/M-Commerce/BaiTap/OhFreshApp/app/src/main/res/layout/item_voucher.xml" value="0.4" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/button_border.xml" value="0.21388888888888888" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/ic_delivery.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/ic_prohibit.xml" value="0.2703125" />
@@ -49,43 +63,53 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/drawable/item_corner_green.xml" value="0.2703125" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.4" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_change_payment_method.xml" value="0.4" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_chatting.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_checkout.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_forget_password.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_help_center.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_member_rank.xml" value="0.2" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_order.xml" value="0.2" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_order_success.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_otpverify.xml" value="0.36" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_rating.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_reset_password.xml" value="0.4" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_select_voucher.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/activity_update_address.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/cart_itemlayout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/checkout_itemlayout.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/fragment_cancel_order.xml" value="0.4" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/fragment_delivered.xml" value="0.264" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/fragment_delivering.xml" value="0.264" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/fragment_myvoucher.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/item_availablevoucher.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/item_veggies.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/notification_layout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/offer.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/payment_itemlayout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_gold.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_member.xml" value="0.4" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_silver.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/term_of_use.xml" value="0.25416666666666665" />
-        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/update.xml" value="0.25416666666666665" />
+        <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_member.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/background_shadow.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/item_corner.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_change_payment_method.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_checkout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_offer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_order_success.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_otpverify.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_rating.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_select_voucher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_update.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_update_address.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/cart_itemlayout.xml" value="0.536" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/checkout_itemlayout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/fragment_delivering.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/fragment_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_availablevoucher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_onboarding_container.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_voucher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/notification_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/payment_itemlayout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/update.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

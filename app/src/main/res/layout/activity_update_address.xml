@@ -54,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,13 +66,12 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
                 android:hint="Oh!Fresh"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>
@@ -82,7 +82,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -93,13 +94,12 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
                 android:hint="099887766"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>
@@ -120,7 +120,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -130,14 +131,14 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:layout_height="35dp"
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_height="40dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
-                android:hint="TP.HCM"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
+                android:spinnerMode="dropdown"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>
@@ -148,7 +149,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -156,19 +158,19 @@
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Quận/Huyện"
                 android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
-            <EditText
-                android:layout_height="35dp"
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_height="40dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
-                android:hint="Bình Thạnh"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:spinnerMode="dropdown"/>
 
         </LinearLayout>
 
@@ -176,7 +178,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -186,14 +189,14 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
 
-            <EditText
-                android:layout_height="35dp"
+            <Spinner
+                android:id="@+id/spinnerWard"
+                android:layout_height="40dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
                 android:hint="Phường 1"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>
@@ -204,7 +207,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -215,13 +219,12 @@
                 android:textColor="@color/black"/>
 
             <EditText
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:layout_width="match_parent"
                 android:textSize="16sp"
                 android:layout_weight="0.7"
                 android:hint="001 D2"
                 android:fontFamily="@font/montserrat_regular"
-                android:background="@drawable/item_corner"
                 android:paddingStart="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"/>

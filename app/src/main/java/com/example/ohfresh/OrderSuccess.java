@@ -49,7 +49,7 @@ public class OrderSuccess extends AppCompatActivity {
         btnCheckingOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OrderSuccess.this, Order.class);
+                Intent intent = new Intent(OrderSuccess.this, Update.class);
                 startActivity(intent);
             }
         });

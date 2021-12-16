@@ -75,7 +75,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:text="Địa chỉ nhận hàng"
                         android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"/>
 
                     <TextView
                         android:id="@+id/txtChangeAddress"
