@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.SearchView
+            android:id="@+id/svSearch"
             android:layout_width="330dp"
             android:layout_height="40dp"
             android:clickable="true"
@@ -25,6 +26,7 @@
             android:background="@drawable/item_corner"/>
 
         <ImageButton
+            android:id="@+id/imvCart"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_cart"

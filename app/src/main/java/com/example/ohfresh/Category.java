@@ -2,13 +2,16 @@ package com.example.ohfresh;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 
 import com.example.adapter.ProductAdapter;
 import com.example.model.Product;
@@ -24,6 +27,8 @@ public class Category extends AppCompatActivity {
     ProductAdapter adapter;
     BottomNavigationView bottomNavigationView;
     MaterialButton btnAll, btnVegetable, btnFruit, btnSeed;
+    SearchView svSearch;
+    ImageView imvCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +39,20 @@ public class Category extends AppCompatActivity {
         initData();
         loadData();
         changeData();
+        addEvent();
         configureNavigation();
+    }
+
+    private void addEvent() {
+        imvCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Category.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     private void changeData() {
@@ -141,6 +159,9 @@ public class Category extends AppCompatActivity {
         btnVegetable = findViewById(R.id.btnVegetable);
         btnFruit = findViewById(R.id.btnFruit);
         btnSeed = findViewById(R.id.btnSeed);
+
+        svSearch = findViewById(R.id.svSearch);
+        imvCart = findViewById(R.id.imvCart);
     }
 
     private void initData() {
