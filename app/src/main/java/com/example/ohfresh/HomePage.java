@@ -198,5 +198,6 @@ public class HomePage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -41,6 +41,7 @@ public class Category extends AppCompatActivity {
         changeData();
         addEvent();
         configureNavigation();
+
     }
 
     private void addEvent() {
@@ -52,7 +53,22 @@ public class Category extends AppCompatActivity {
             }
         });
 
+        gvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
+                startActivity(intent);
+            }
+        });
 
+        svSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getId() == R.id.svSearch) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.Category, new SearchFragment()).commit();
+                }
+            }
+        });
     }
 
     private void changeData() {
