@@ -24,6 +24,7 @@
             android:background="#ffffff"/>
 
         <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView1"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:clickable="true"

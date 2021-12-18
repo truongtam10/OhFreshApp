@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 import com.example.adapter.ProductAdapter;
 import com.example.model.Product;
@@ -49,6 +50,7 @@ public class SearchResult extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     private void loadData() {

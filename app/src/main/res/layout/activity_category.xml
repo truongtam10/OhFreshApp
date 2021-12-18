@@ -97,14 +97,14 @@
             android:textSize="10dp"/>
     </LinearLayout>
 
-    <GridView
-        android:id="@+id/gvProduct"
+    <fragment
+        android:id="@+id/fragmentProduct"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:numColumns="2"
         android:listSelector="@color/light_gray"
+        android:name="com.example.ohfresh.AllProductFragment"
+        tools:layout="@layout/fragment_all_product"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

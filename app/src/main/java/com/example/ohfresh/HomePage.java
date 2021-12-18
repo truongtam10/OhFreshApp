@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
@@ -56,6 +57,7 @@ public class HomePage extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ImageButton btnChat, btnCart;
     TextView txtMoreNewProduct, txtMoreBestSeller;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -198,6 +200,7 @@ public class HomePage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }
