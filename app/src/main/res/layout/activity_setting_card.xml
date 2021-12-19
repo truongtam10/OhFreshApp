@@ -54,7 +54,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <LinearLayout
-                    android:id="@+id/lnMain"
+                    android:id="@+id/lnAdd"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
@@ -89,6 +89,18 @@
                         android:layout_marginLeft="5dp"/>
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout
+                android:id="@+id/container_addcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+            <FrameLayout
+                android:id="@+id/container_listcard"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:padding="10dp"
+                />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

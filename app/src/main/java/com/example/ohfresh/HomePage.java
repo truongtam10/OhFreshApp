@@ -33,7 +33,7 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class HomePage extends AppCompatActivity {
+public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClickListener{
 
     SliderView sliderView;
     int[] images = {R.drawable.img_banner1, R.drawable.img_banner2};
@@ -73,7 +73,7 @@ public class HomePage extends AppCompatActivity {
     private void initData() {
         //VeggiesData
         veggies = new ArrayList<VeggiesItems>();
-        veggies.add(new VeggiesItems(R.drawable.item_all));
+//        veggies.add(new VeggiesItems(R.drawable.item_all));
         veggies.add(new VeggiesItems(R.drawable.img_broccoli,R.drawable.rectangle_broccoli,"Bông cải"));
         veggies.add(new VeggiesItems(R.drawable.img_mushroom,R.drawable.rectangle_mushroom,"Nấm"));
         veggies.add(new VeggiesItems(R.drawable.img_cucumber,R.drawable.rectangle_cucumber,"Dưa chuột"));
@@ -120,7 +120,7 @@ public class HomePage extends AppCompatActivity {
 
     private void loadData() {
         //loadDataVeggies
-        adapter = new VeggiesAdapter(getApplicationContext(),veggies);
+        adapter = new VeggiesAdapter(getApplicationContext(),veggies,this);
         rclVeggies.setAdapter(adapter);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(HomePage.this, RecyclerView.HORIZONTAL, false);
         rclVeggies.setLayoutManager(linearLayoutManager);
@@ -198,5 +198,28 @@ public class HomePage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onClick(int position) {
+        switch (position){
+            case 0:
+                Intent intent0 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent0);
+
+            case 1:
+                Intent intent1 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent1);
+
+            case 2:
+                Intent intent2 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent2);
+
+            case 3:
+                Intent intent3 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent3);
+        }
+
+
     }
 }

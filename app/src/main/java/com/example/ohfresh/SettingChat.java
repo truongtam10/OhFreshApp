@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 public class SettingChat extends AppCompatActivity {
     ImageView imvBack;
+    private FragmentAddMessage fragmentAddMessage;
+    private FragmentListMessage fragmentListMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +19,13 @@ public class SettingChat extends AppCompatActivity {
 
         linkViews();
         addEvents();
+        SetFragment();
     }
 
     private void linkViews() {
         imvBack = findViewById(R.id.imvBack);
+        fragmentAddMessage = new FragmentAddMessage();
+        fragmentListMessage = new FragmentListMessage();
     }
 
     private void addEvents() {
@@ -31,5 +36,12 @@ public class SettingChat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void SetFragment() {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container_addmess, fragmentAddMessage)
+                .replace(R.id.container_listmess, fragmentListMessage)
+                .commit();
     }
 }

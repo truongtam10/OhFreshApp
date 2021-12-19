@@ -136,6 +136,37 @@
 <!--                        app:layout_constraintBottom_toBottomOf="@+id/lnMyVoucher" />-->
 
                     <LinearLayout
+                        android:id="@+id/lnName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/edtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:paddingBottom="15dp"
+                                android:hint="Họ Tên"
+                                android:textColor="@color/mainGray"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:layout_editor_absoluteX="4dp" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
                         android:id="@+id/lnBirthday"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -162,15 +193,6 @@
                                 app:layout_constraintVertical_bias="0.0"
                                 tools:layout_editor_absoluteX="4dp" />
 
-
-                            <!--                            <ImageView-->
-<!--                                android:id="@+id/imvNext5"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                                app:layout_constraintTop_toTopOf="parent"-->
-<!--                                app:srcCompat="@drawable/ic_next" />-->
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -276,8 +298,24 @@
 <!--                        android:background="#C8C8D5"-->
 <!--                        app:layout_constraintBottom_toBottomOf="@+id/lnPolicy" />-->
 
-                </LinearLayout>
 
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lưu"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#ffffff"
+                    app:layout_constraintTop_toBottomOf="@id/lnMain"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/mainGreen"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 

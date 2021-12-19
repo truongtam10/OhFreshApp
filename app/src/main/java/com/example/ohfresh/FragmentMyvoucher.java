@@ -31,12 +31,12 @@ public class FragmentMyvoucher extends Fragment {
     }
 
     private ArrayList<MyVoucher> initData() {
-    vouchers = new ArrayList<>();
-    vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
+        vouchers = new ArrayList<>();
         vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
         vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
         vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
         vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
-    return vouchers;
+        vouchers.add(new MyVoucher("Giảm 50%","Đơn tối thiểu 50k giảm tối đa 25k","Có hiệu lực đến 20/10/2021 00:00","XKMAIFJ122"));
+        return vouchers;
     }
 }

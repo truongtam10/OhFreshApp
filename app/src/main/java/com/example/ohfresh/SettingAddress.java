@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 public class SettingAddress extends AppCompatActivity {
     ImageView imvBack;
+    private FragmentAddAddress fragmentAddAddress;
+    private FragmentListAddress fragmentListAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +19,14 @@ public class SettingAddress extends AppCompatActivity {
 
         linkViews();
         addEvents();
+        SetFragment();
     }
 
     private void linkViews() {
+
         imvBack = findViewById(R.id.imvBack);
+        fragmentAddAddress = new FragmentAddAddress();
+        fragmentListAddress = new FragmentListAddress();
     }
 
     private void addEvents() {
@@ -31,5 +37,12 @@ public class SettingAddress extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void SetFragment() {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container_address, fragmentAddAddress)
+                .replace(R.id.container_listaddress, fragmentListAddress)
+                .commit();
     }
 }
