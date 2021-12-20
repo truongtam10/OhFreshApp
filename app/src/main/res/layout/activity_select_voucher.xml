@@ -114,20 +114,7 @@
         android:background="@color/white"
         android:paddingTop="5dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSaveVoucher"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/mainGreen"
-            android:fontFamily="@font/montserrat_bold"
-            android:gravity="center"
-            android:text="Lưu"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            app:cornerRadius="10dp"
 
-            app:layout_constraintVertical_bias="0.943" />
 
     </LinearLayout>
 

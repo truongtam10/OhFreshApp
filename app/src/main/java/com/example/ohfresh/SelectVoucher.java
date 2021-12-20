@@ -26,7 +26,7 @@ public class SelectVoucher extends AppCompatActivity {
     ArrayList<Voucher> vouchers;
     VoucherAdapter adapter;
 
-    Button btnSaveVoucher;
+    TextView txtApplyVoucher;
     ImageButton btnReturnVoucher;
 
     @Override
@@ -45,8 +45,7 @@ public class SelectVoucher extends AppCompatActivity {
         lvSelectVoucher = findViewById(R.id.lvSelectVoucher);
 
         btnReturnVoucher = findViewById(R.id.btnReturnChangeVoucher);
-        btnSaveVoucher = findViewById(R.id.btnSaveVoucher);
-
+        txtApplyVoucher = findViewById(R.id.txtApplyVoucher);
     }
 
     /*private void configRecyclerView() {
@@ -74,12 +73,6 @@ public class SelectVoucher extends AppCompatActivity {
             }
         });
 
-        btnSaveVoucher.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SelectVoucher.this, Checkout.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

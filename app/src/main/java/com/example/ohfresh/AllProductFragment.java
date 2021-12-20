@@ -46,7 +46,7 @@ public class AllProductFragment extends Fragment {
         products.add(new Product(R.drawable.img_blueberry, "Blueberry", "35000", "KG"));
         products.add(new Product(R.drawable.img_tomato, "Cà chua", "35000", "KG"));
         products.add(new Product(R.drawable.img_raspberry, "Mâm xôi", "35000", "KG"));
-        products.add(new Product(R.drawable.img_bongcai, "Bông cải", "49.000", "KG"));
+        products.add(new Product(R.drawable.img_banana, "Bông cải", "49.000", "KG"));
         products.add(new Product(R.drawable.img_corn, "Ngô", "35.000", "KG"));
         products.add(new Product(R.drawable.img_pumpkin, "Bí đỏ", "35.000", "KG"));
 
