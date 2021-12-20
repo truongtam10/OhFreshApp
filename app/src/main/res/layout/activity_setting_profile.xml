@@ -78,64 +78,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/imvPhoto">
 
                     <LinearLayout
-                        android:id="@+id/lnSex"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/montserrat_regular"
-                                android:text="Giới tính"
-                                android:textColor="@color/mainGray"
-                                android:textSize="15sp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-<!--                            <ImageView-->
-<!--                                android:id="@+id/imvNext4"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                                app:layout_constraintTop_toTopOf="parent"-->
-<!--                                app:srcCompat="@drawable/ic_next" />-->
-
-                            <Spinner
-                                android:id="@+id/spSex"
-                                android:layout_width="90dp"
-                                android:layout_height="20dp"
-                                android:layout_marginRight="-18dp"
-                                android:padding="0dp"
-                                android:textAlignment="viewEnd"
-                                android:pointerIcon="none"
-                                android:spinnerMode="dialog"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"/>
-<!--                                app:layout_constraintBaseline_toBaselineOf="@+id/txtsex"/>-->
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-
-<!--                    <View-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="0.5dp"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:layout_marginBottom="10dp"-->
-<!--                        android:background="#C8C8D5"-->
-<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnMyVoucher" />-->
-
-                    <LinearLayout
                         android:id="@+id/lnName"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -154,6 +96,53 @@
                                 android:fontFamily="@font/montserrat_regular"
                                 android:paddingBottom="15dp"
                                 android:hint="Họ Tên"
+                                android:textColor="@color/mainGray"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:layout_editor_absoluteX="4dp" />
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/imvNext4"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:srcCompat="@drawable/ic_next" />-->
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+<!--                    <View-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="0.5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:background="#C8C8D5"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@+id/lnMyVoucher" />-->
+
+                    <LinearLayout
+                        android:id="@+id/lnSex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/edtSex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:paddingBottom="15dp"
+                                android:hint="Giới tính"
                                 android:textColor="@color/mainGray"
                                 android:textSize="15sp"
                                 app:layout_constraintBottom_toBottomOf="parent"

@@ -34,7 +34,7 @@ public class SettingNotify extends AppCompatActivity {
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                txtNotifyChat.setText("Tất cả các thông báo đã được " + (switchCompat.isChecked()? "bật":"tắt"));
+                txtNotifyChat.setText("Thông báo đã được " + (switchCompat.isChecked()? "bật":"tắt"));
             }
         });
 

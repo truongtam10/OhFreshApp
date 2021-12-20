@@ -40,29 +40,18 @@ public class SettingProfile extends AppCompatActivity  {
         setContentView(R.layout.activity_setting_profile);
 
         linkViews();
-        loadData();
         addEvents();
 
     }
 
 
     private void linkViews() {
-        spSex = findViewById(R.id.spSex);
         imvBack = findViewById(R.id.imvBack);
         edtDate = findViewById(R.id.edtDate);
         lnBirthday = findViewById(R.id.lnBirthday);
 
     }
 
-    private void loadData() {
-        sex = new ArrayList<>();
-        sex.add("Nam");
-        sex.add("Nữ");
-        sex.add("Khác");
-        adapter = new ArrayAdapter<String>(SettingProfile.this, android.R.layout.simple_list_item_1);
-        adapter.addAll(sex);
-        spSex.setAdapter(adapter);
-    }
 
     private void addEvents() {
         imvBack.setOnClickListener(new View.OnClickListener() {
