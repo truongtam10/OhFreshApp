@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bạn có chắc chắn muốn xóa tài khoản?"
+        android:text="Bạn chắc chắn muốn xóa tài khoản?"
         android:fontFamily="@font/montserrat_regular"
         android:textColor="@color/mainGray"
         android:textSize="13sp"
