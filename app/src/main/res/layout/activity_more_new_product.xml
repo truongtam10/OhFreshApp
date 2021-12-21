@@ -57,17 +57,4 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/nav_bg"
-        app:itemIconTint="@drawable/item_selector"
-        app:itemTextColor="@drawable/item_selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom_navigation" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

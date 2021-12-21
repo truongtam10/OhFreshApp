@@ -43,6 +43,7 @@ public class OrderSuccess extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(OrderSuccess.this, HomePage.class);
                 startActivity(intent);
+                finish();
             }
         });
 

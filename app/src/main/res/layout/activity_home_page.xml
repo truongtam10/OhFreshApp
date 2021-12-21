@@ -171,15 +171,6 @@
                 app:layout_constraintLeft_toLeftOf="@id/rclBestSeller"
                 app:layout_constraintTop_toBottomOf="@id/txtNewProduct"
                 tools:ignore="UnknownId" />
-            <!--            <GridView-->
-            <!--                android:id="@+id/gvNewProduct"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="500dp"-->
-            <!--                android:numColumns="2"-->
-            <!--                tools:listitem="@layout/item_newproduct"-->
-            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--                app:layout_constraintLeft_toLeftOf="@id/rclBestSeller"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/txtSanPhamMoi"/>-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

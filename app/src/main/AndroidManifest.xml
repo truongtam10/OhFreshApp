@@ -55,6 +55,9 @@
             android:name=".Update"
             android:exported="true" />
         <activity
+            android:name=".Rating"
+            android:exported="true" />
+        <activity
             android:name=".Offer"
             android:exported="true" />
         <activity

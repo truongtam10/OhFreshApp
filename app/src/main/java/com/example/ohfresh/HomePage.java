@@ -10,10 +10,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -201,6 +203,12 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-
+        gvNewProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Product p = (Product) npadapter.getItem(i);
+                Toast.makeText(HomePage.this,i + ": " + p.getName(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

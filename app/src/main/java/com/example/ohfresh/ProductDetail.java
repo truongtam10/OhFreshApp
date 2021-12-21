@@ -3,14 +3,17 @@ package com.example.ohfresh;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.adapter.DetailAdapter;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 
@@ -22,6 +25,8 @@ public class ProductDetail extends AppCompatActivity {
     DetailAdapter adapter;
     TextView[] dots;
     LinearLayout dotsLayout;
+    MaterialButton btnThem;
+    ImageButton imbBack, imbCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +44,18 @@ public class ProductDetail extends AppCompatActivity {
         imbCong = findViewById(R.id.imbCong);
         imbTru = findViewById(R.id.imbTru);
         txtSL  =findViewById(R.id.txtSL);
+        btnThem = findViewById(R.id.btnThem);
+        imbBack = findViewById(R.id.imbBack);
+        imbCart = findViewById(R.id.imbCart);
     }
 
     private void initData() {
         products = new ArrayList<>();
-        products.add(R.drawable.cabbage1);
-        products.add(R.drawable.cabbage2);
-        products.add(R.drawable.cabbage3);
-        products.add(R.drawable.cabbage4);
-        products.add(R.drawable.cabbage5);
+        products.add(R.drawable.img_apple);
+        products.add(R.drawable.img_apple_d1);
+        products.add(R.drawable.img_apple_d2);
+        products.add(R.drawable.img_apple_d3);
+        products.add(R.drawable.img_apple_d4);
         adapter= new DetailAdapter(getApplicationContext(), products);
         vpCTSP.setAdapter(adapter);
         dots = new TextView[products.size()];
@@ -83,6 +91,28 @@ public class ProductDetail extends AppCompatActivity {
                     sl = sl + 1;
                     txtSL.setText(String.valueOf(sl));
                 }
+            }
+        });
+
+        imbBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        btnThem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Đã thêm hàng vào giỏ", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        imbCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Cart.class);
+                startActivity(intent);
             }
         });
     }
