@@ -38,8 +38,9 @@ public class SearchResult extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SearchResult.this, HomePage.class);
-                startActivity(intent);
+//                Intent intent = new Intent(SearchResult.this, Category.class);
+//                startActivity(intent);
+                finish();
             }
         });
 

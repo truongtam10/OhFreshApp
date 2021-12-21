@@ -38,7 +38,7 @@ public class VegetableFragment extends Fragment {
         products.add(new Product(R.drawable.img_tomato, "Cà chua", "35.000", "KG"));
         products.add(new Product(R.drawable.img_bellpepper, "Ớt chuông", "30.000", "KG"));
         products.add(new Product(R.drawable.img_caingot, "Cải ngọt", "29.000", "KG"));
-        products.add(new Product(R.drawable.img_apple, "Bông cải", "49.000", "KG"));
+        products.add(new Product(R.drawable.img_bongcai, "Bông cải", "49.000", "KG"));
         products.add(new Product(R.drawable.img_corn, "Ngô", "35.000", "KG"));
         products.add(new Product(R.drawable.img_pumpkin, "Bí đỏ", "35.000", "KG"));
 

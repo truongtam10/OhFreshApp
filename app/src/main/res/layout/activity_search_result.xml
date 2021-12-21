@@ -24,10 +24,11 @@
             android:background="#ffffff"/>
 
         <androidx.appcompat.widget.SearchView
-            android:id="@+id/searchView1"
+            android:id="@+id/svSearchInResult"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:clickable="true"
+            app:queryHint="Tìm kiếm"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:background="@drawable/item_corner"/>
