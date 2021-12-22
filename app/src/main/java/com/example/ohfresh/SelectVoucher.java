@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -28,6 +29,7 @@ public class SelectVoucher extends AppCompatActivity {
 
     TextView txtApplyVoucher;
     ImageButton btnReturnVoucher;
+    Button btnApplyVoucher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class SelectVoucher extends AppCompatActivity {
 
         btnReturnVoucher = findViewById(R.id.btnReturnChangeVoucher);
         txtApplyVoucher = findViewById(R.id.txtApplyVoucher);
+        btnApplyVoucher = findViewById(R.id.btnApplyVoucher);
     }
 
     /*private void configRecyclerView() {
@@ -72,7 +75,19 @@ public class SelectVoucher extends AppCompatActivity {
                 finish();
             }
         });
-
+        lvSelectVoucher.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(SelectVoucher.this, Offer.class);
+                startActivity(intent);
+            }
+        });
+        btnApplyVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }

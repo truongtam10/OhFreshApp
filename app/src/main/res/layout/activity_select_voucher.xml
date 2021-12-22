@@ -58,6 +58,7 @@
                 android:layout_marginRight="5dp"/>
 
             <Button
+                android:id="@+id/btnApplyVoucher"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="0.4"

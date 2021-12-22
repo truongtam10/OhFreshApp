@@ -33,8 +33,7 @@ public class OrderSuccess extends AppCompatActivity {
         btnReturnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OrderSuccess.this, HomePage.class);
-                startActivity(intent);
+                finish();
             }
         });
 
@@ -43,7 +42,7 @@ public class OrderSuccess extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(OrderSuccess.this, HomePage.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
