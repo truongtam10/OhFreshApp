@@ -27,8 +27,7 @@ public class SettingCard extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SettingCard.this,Settings.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

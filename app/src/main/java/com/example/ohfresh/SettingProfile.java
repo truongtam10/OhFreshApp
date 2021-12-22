@@ -68,8 +68,7 @@ public class SettingProfile extends AppCompatActivity  {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SettingProfile.this,Settings.class);
-                startActivity(intent);
+                finish();
             }
         });
 

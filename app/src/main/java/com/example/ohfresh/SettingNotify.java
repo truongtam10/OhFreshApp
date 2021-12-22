@@ -41,8 +41,7 @@ public class SettingNotify extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SettingNotify.this,Settings.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

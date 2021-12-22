@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -14,7 +15,8 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy,lnIntroduce,lnMyVoucher;
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy,lnIntroduce,lnMyVoucher, lnRate, lnSetting, lnLogout;
+    ImageView imvEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,11 @@ public class Account extends AppCompatActivity {
         lnPolicy = findViewById(R.id.lnPolicy);
         lnIntroduce= findViewById(R.id.lnIntroduce);
         lnMyVoucher = findViewById(R.id.lnMyVoucher);
+        lnRate = findViewById(R.id.lnRate);
+        lnSetting = findViewById(R.id.lnSetting);
+        lnLogout = findViewById(R.id.lnLogout);
+
+        imvEdit = findViewById(R.id.imvEdit);
 
     }
 
@@ -70,6 +77,13 @@ public class Account extends AppCompatActivity {
     }
 
     private void addEvents() {
+        imvEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, SettingProfile.class);
+                startActivity(intent);
+            }
+        });
 
         lnDelivering.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,6 +129,23 @@ public class Account extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Account.this,MyVoucher.class);
+                startActivity(intent);
+            }
+        });
+
+        lnSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Settings.class);
+                startActivity(intent);
+            }
+        });
+
+        lnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent intent = new Intent(Account.this, Login.class);
                 startActivity(intent);
             }
         });
