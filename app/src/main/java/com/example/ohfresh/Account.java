@@ -14,7 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy;
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy,lnIntroduce,lnMyVoucher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,9 @@ public class Account extends AppCompatActivity {
         lnRank= findViewById(R.id.lnRank);
         lnDelivering= findViewById(R.id.lnDelivering);
         lnPolicy = findViewById(R.id.lnPolicy);
+        lnIntroduce= findViewById(R.id.lnIntroduce);
+        lnMyVoucher = findViewById(R.id.lnMyVoucher);
+
     }
 
     private void configureNavigation() {
@@ -101,5 +104,53 @@ public class Account extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        lnIntroduce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this,IntroduceFriend.class);
+                startActivity(intent);
+            }
+        });
+        lnMyVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this,MyVoucher.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    public Account() {
+        super();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

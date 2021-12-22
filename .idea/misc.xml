@@ -46,12 +46,15 @@
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_home_page.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_member_rank.xml" value="0.22" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_more_best_seller.xml" value="0.14743589743589744" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_more_new_product.xml" value="0.14743589743589744" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_notification.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_offer.xml" value="0.4466666666666667" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_order.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_order_success.xml" value="0.1796875" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_product_detail.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_rating.xml" value="0.4466666666666667" />
-        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_update.xml" value="0.14666666666666667" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_update.xml" value="0.4466666666666667" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_user_policy.xml" value="0.16666666666666666" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/fragment_cancel_order.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/fragment_delivered.xml" value="0.14743589743589744" />
@@ -96,11 +99,6 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_member.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_notification.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_offer.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_select_voucher.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_setting_card.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/fragment_myvoucher.xml" value="0.13020833333333334" />
       </map>
     </option>
   </component>

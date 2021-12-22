@@ -10,11 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OhFresh">
         <activity
+            android:name=".MyVoucher"
+            android:exported="false" />
+        <activity
+            android:name=".IntroduceFriend"
+            android:exported="false" />
+        <activity
             android:name=".Search"
             android:exported="true" />
         <activity
             android:name=".SearchResult"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SettingPassword"
             android:exported="true" />
@@ -99,11 +105,6 @@
         <activity
             android:name=".Login"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Register"
@@ -122,7 +123,13 @@
             android:exported="true" />
         <activity
             android:name=".Account"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
