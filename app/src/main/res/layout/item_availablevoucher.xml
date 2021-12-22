@@ -3,24 +3,14 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="15dp">
+    android:paddingVertical="10dp">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="90dp">
-                </RadioButton>
-
-            </RadioGroup>
+            android:orientation="horizontal"
+            >
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -45,7 +35,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:padding="5dp"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="15dp"
                         android:gravity="center_vertical"
                         android:layout_gravity="center_vertical">
 

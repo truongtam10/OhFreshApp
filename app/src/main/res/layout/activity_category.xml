@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Category"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:id="@+id/Category">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -17,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.SearchView
+            android:id="@+id/svSearch"
             android:layout_width="330dp"
             android:layout_height="40dp"
             android:clickable="true"
@@ -25,6 +27,7 @@
             android:background="@drawable/item_corner"/>
 
         <ImageButton
+            android:id="@+id/imvCart"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_cart"
@@ -94,13 +97,14 @@
             android:textSize="10dp"/>
     </LinearLayout>
 
-    <GridView
-        android:id="@+id/gvProduct"
+    <fragment
+        android:id="@+id/fragmentProduct"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:numColumns="2"
+        android:listSelector="@color/light_gray"
+        android:name="com.example.ohfresh.AllProductFragment"
+        tools:layout="@layout/fragment_all_product"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

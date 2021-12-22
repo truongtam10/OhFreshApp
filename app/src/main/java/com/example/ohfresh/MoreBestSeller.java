@@ -30,7 +30,6 @@ public class MoreBestSeller extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
-        configureNavigation();
         addEvents();
     }
 
@@ -74,35 +73,4 @@ public class MoreBestSeller extends AppCompatActivity {
         });
     }
 
-
-    private void configureNavigation() {
-        bottomNavigationView.setSelectedItemId(R.id.navCategory);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navHomepage:
-                        startActivity(new Intent(getApplicationContext(), HomePage.class));
-                        finish();
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.navCategory:
-                        return true;
-                    case R.id.navNotification:
-                        startActivity(new Intent(getApplicationContext(), Notification.class));
-                        finish();
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.navAccount:
-                        startActivity(new Intent(getApplicationContext(), Account.class));
-                        finish();
-                        overridePendingTransition(0, 0);
-                        return true;
-                }
-                return false;
-            }
-        });
-
-    }
 }
