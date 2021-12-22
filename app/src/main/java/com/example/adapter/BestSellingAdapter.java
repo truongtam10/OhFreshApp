@@ -18,17 +18,20 @@ import java.util.List;
 public class BestSellingAdapter extends RecyclerView.Adapter<BestSellingAdapter.ViewHolder> {
     Context context;
     List<BestSellingItems> bestSellingItems;
+    private OnBestSellerListener mOnBestSellerListener;
 
-    public BestSellingAdapter(Context context, List<BestSellingItems> bestSellingItems) {
+    public BestSellingAdapter(Context context, List<BestSellingItems> bestSellingItems, OnBestSellerListener onBestSellerListener) {
         this.context = context;
         this.bestSellingItems = bestSellingItems;
+
+        this.mOnBestSellerListener = onBestSellerListener;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_bestselling, parent, false);
-        return new ViewHolder(view);
+        return new ViewHolder(view, mOnBestSellerListener);
     }
 
     @Override
@@ -44,13 +47,25 @@ public class BestSellingAdapter extends RecyclerView.Adapter<BestSellingAdapter.
         return bestSellingItems.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imvBestSeller;
         TextView txtBestSeller;
-        public ViewHolder(@NonNull View itemView) {
+        OnBestSellerListener onBestSellerListener;
+        public ViewHolder(@NonNull View itemView, OnBestSellerListener onBestSellerListener) {
             super(itemView);
             imvBestSeller = itemView.findViewById(R.id.imvBestSeller);
             txtBestSeller = itemView.findViewById(R.id.txtBestSeller);
+            this.onBestSellerListener=onBestSellerListener;
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            onBestSellerListener.OnBestSellerClick(getAdapterPosition());
+        }
+    }
+    public interface OnBestSellerListener{
+        void OnBestSellerClick(int position);
     }
 }

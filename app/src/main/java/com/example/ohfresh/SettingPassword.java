@@ -37,8 +37,7 @@ public class SettingPassword extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SettingPassword.this,Settings.class);
-                startActivity(intent);
+               finish();
             }
         });
     }

@@ -102,8 +102,7 @@ public class Settings extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Settings.this,Account.class);
-                startActivity(intent);
+                finish();
             }
         });
 

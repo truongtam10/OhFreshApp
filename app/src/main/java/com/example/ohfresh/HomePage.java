@@ -36,7 +36,7 @@ import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 
-public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClickListener{
+public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClickListener, BestSellingAdapter.OnBestSellerListener {
 
     SliderView sliderView;
     int[] images = {R.drawable.img_banner1, R.drawable.img_banner2};
@@ -82,7 +82,7 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
         veggies.add(new VeggiesItems(R.drawable.img_mushroom,R.drawable.rectangle_mushroom,"Nấm"));
         veggies.add(new VeggiesItems(R.drawable.img_cucumber,R.drawable.rectangle_cucumber,"Dưa chuột"));
         veggies.add(new VeggiesItems(R.drawable.img_greenpea,R.drawable.rectangle_greenpea,"Đậu hà lan"));
-        //VeggiesData
+        //BestSellerData
         bestSellingItems = new ArrayList<BestSellingItems>();
         bestSellingItems.add(new BestSellingItems(R.drawable.img_strawberry,"Dâu tây"));
         bestSellingItems.add(new BestSellingItems(R.drawable.img_bellpepper,"Ớt chuông"));
@@ -129,7 +129,7 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(HomePage.this, RecyclerView.HORIZONTAL, false);
         rclVeggies.setLayoutManager(linearLayoutManager);
         //loadDataBestSeller
-        bslAdapter = new BestSellingAdapter(getApplicationContext(),bestSellingItems);
+        bslAdapter = new BestSellingAdapter(getApplicationContext(),bestSellingItems,this);
         rclBestSelling.setAdapter(bslAdapter);
         LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(HomePage.this, RecyclerView.HORIZONTAL, false);
         rclBestSelling.setLayoutManager(linearLayoutManager1);
@@ -232,6 +232,33 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
                 startActivity(intent3);
         }
 
+
+    }
+
+
+    @Override
+    public void OnBestSellerClick(int position) {
+        switch (position){
+            case 0:
+                Intent intent0 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent0);
+
+            case 1:
+                Intent intent1 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent1);
+
+            case 2:
+                Intent intent2 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent2);
+
+            case 3:
+                Intent intent3 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent3);
+
+            case 4:
+                Intent intent4 = new Intent(HomePage.this, ProductDetail.class);
+                startActivity(intent4);
+        }
 
     }
 }
