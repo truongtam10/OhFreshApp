@@ -14,6 +14,11 @@
             android:exported="true">
 
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity
@@ -89,6 +94,9 @@
             android:name=".HelpCenter"
             android:exported="true" />
         <activity
+            android:name=".Order"
+            android:exported="true" />
+        <activity
             android:name=".Category"
             android:exported="true" />
         <activity
@@ -131,11 +139,6 @@
             android:name=".Account"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity

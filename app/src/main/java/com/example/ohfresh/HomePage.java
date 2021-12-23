@@ -39,7 +39,7 @@ import java.util.ArrayList;
 public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClickListener, BestSellingAdapter.OnBestSellerListener {
 
     SliderView sliderView;
-    int[] images = {R.drawable.img_banner1, R.drawable.img_banner2};
+    int[] images = {R.drawable.banner1, R.drawable.img_banner2};
     SliderAdapter sldAdapter;
     //RecyclerViewVeggies
     RecyclerView rclVeggies;
@@ -218,18 +218,19 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
             case 0:
                 Intent intent0 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent0);
-
+                break;
             case 1:
                 Intent intent1 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent1);
-
+                break;
             case 2:
                 Intent intent2 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent2);
-
+                break;
             case 3:
                 Intent intent3 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent3);
+                break;
         }
 
 
@@ -242,22 +243,23 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
             case 0:
                 Intent intent0 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent0);
-
+                break;
             case 1:
                 Intent intent1 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent1);
-
+                break;
             case 2:
                 Intent intent2 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent2);
-
+                break;
             case 3:
                 Intent intent3 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent3);
-
+                break;
             case 4:
                 Intent intent4 = new Intent(HomePage.this, ProductDetail.class);
                 startActivity(intent4);
+                break;
         }
 
     }

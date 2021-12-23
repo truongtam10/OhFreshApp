@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
@@ -21,6 +23,7 @@ public class FragmentMyvoucher extends Fragment {
     ArrayList<MyVoucher> vouchers;
     MyVoucherAdapter adapter;
     MyVoucherClick myVoucherClick;
+    ImageView imvBacktoAccount;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,7 +40,16 @@ public class FragmentMyvoucher extends Fragment {
                 myVoucherClick.click(vouchers.get(i));
             }
         });
+
+        imvBacktoAccount = view.findViewById(R.id.imvBackToAccount);
+        imvBacktoAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().onBackPressed();
+            }
+        });
         return view;
+
     }
 
     private ArrayList<MyVoucher> initData() {

@@ -1,13 +1,13 @@
 package com.example.ohfresh;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.SearchView;
 
 import com.example.adapter.ProductAdapter;
 import com.example.model.Product;
@@ -21,6 +21,7 @@ public class SearchResult extends AppCompatActivity {
     ProductAdapter adapter;
 
     ImageView imvBack, imvCart;
+    SearchView svSearchInResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,14 @@ public class SearchResult extends AppCompatActivity {
             }
         });
 
+        svSearchInResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Search.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void loadData() {
@@ -71,5 +80,6 @@ public class SearchResult extends AppCompatActivity {
         gvProduct = findViewById(R.id.gvProduct);
         imvBack = findViewById(R.id.imvBack);
         imvCart = findViewById(R.id.imvCart);
+        svSearchInResult = findViewById(R.id.svSearchInResult);
     }
 }

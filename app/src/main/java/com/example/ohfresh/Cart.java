@@ -74,8 +74,7 @@ public class Cart extends AppCompatActivity {
         btnReturnOutCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cart.this, HomePage.class);
-                startActivity(intent);
+                finish();
             }
         });
 

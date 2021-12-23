@@ -13,11 +13,14 @@ import android.widget.TextView;
 
 import com.example.model.MyVoucher;
 import com.example.utils.Constant;
+import com.google.android.material.button.MaterialButton;
 
 public class InfoFragment extends Fragment {
 
     MyVoucher myVoucher=null;
     TextView txtVoucherName, txtVoucherValue, txtVoucherDate,txtContentPromotion,txtContentDate,txtContentCondition ;
+    ImageView imvBackToMyVoucher;
+    MaterialButton btnUse;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +45,24 @@ public class InfoFragment extends Fragment {
             txtContentDate.setText(myVoucher.getVoucherDate());
             txtContentCondition.setText("Mã "+myVoucher.getVoucherID() +" cho "+myVoucher.getVoucherValue() +" trên ứng dụng Oh!Fresh. HSD: "+myVoucher.getVoucherDate() +" Số lượng có hạn. Mỗi khách hàng chỉ được sử dụng một lần.");
         }
+
+        imvBackToMyVoucher = view.findViewById(R.id.imvBackToMyVoucher);
+        imvBackToMyVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().onBackPressed();
+            }
+        });
+        btnUse = view.findViewById(R.id.btnUse);
+        btnUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Category.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
+
 }
