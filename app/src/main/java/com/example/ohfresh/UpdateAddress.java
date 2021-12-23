@@ -70,8 +70,7 @@ public class UpdateAddress extends AppCompatActivity {
         btnReturnAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UpdateAddress.this, Checkout.class);
-                startActivity(intent);
+                finish();
             }
         });
 

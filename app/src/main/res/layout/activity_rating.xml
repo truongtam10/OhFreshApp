@@ -176,25 +176,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
 
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnAddPhoto"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:shadowColor="@color/white"
                 android:text="@string/rating_add_photo"
                 android:textAllCaps="false"
-                android:textSize="18sp"
                 android:textColor="@color/mainGreen"
+                android:textSize="18sp"
                 app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtRatingContent"/>
+                app:layout_constraintTop_toBottomOf="@+id/edtRatingContent"
+                app:strokeColor="@color/mainGreen"
+                app:strokeWidth="1dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnVerifyOTP"
+                android:id="@+id/btnSendRating"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
@@ -204,7 +205,6 @@
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 style="@style/Widget.MaterialComponents.Button.Icon"
-                app:icon="@drawable/ic_send"
                 app:cornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

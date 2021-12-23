@@ -53,7 +53,7 @@
     <string name="rating_title">Đánh giá sản phẩm</string>
     <string name="rating_content">Hãy chia sẻ cảm nhận của bạn về sản phẩm này nhé!</string>
     <string name="rating_add_photo">Thêm ảnh/ video</string>
-    <string name="rating_submit">Thêm ảnh/ video</string>
+    <string name="rating_submit">Gửi đánh giá</string>
 
     <!--    Deliver Status-->
     <string name="txt_delivering">Đang giao hàng</string>

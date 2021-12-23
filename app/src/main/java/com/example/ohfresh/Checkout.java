@@ -97,8 +97,7 @@ public class Checkout extends AppCompatActivity {
         btnReturnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Checkout.this, Cart.class);
-                startActivity(intent);
+                finish();
             }
         });
 
