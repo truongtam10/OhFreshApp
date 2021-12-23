@@ -141,22 +141,27 @@ public class Checkout extends AppCompatActivity implements PaymentAdapter.OnPaym
             case 0:
                 Intent intent0 = new Intent(Checkout.this, ChangePaymentMethod.class);
                 startActivity(intent0);
+                break;
 
             case 1:
                 Intent intent1 = new Intent(Checkout.this, ChangePaymentMethod.class);
                 startActivity(intent1);
+                break;
 
             case 2:
                 Intent intent2 = new Intent(Checkout.this, ChangePaymentMethod.class);
                 startActivity(intent2);
+                break;
 
             case 3:
                 Intent intent3 = new Intent(Checkout.this, ChangePaymentMethod.class);
                 startActivity(intent3);
+                break;
 
             case 4:
                 Intent intent4 = new Intent(Checkout.this, ChangePaymentMethod.class);
                 startActivity(intent4);
+                break;
         }
     }
 }

@@ -68,7 +68,7 @@ public class VoucherAdapter extends BaseAdapter{
         return view;
     }
 
-    private static class viewHolder{
+    static class viewHolder{
         TextView txtDateExpiration, txtAmountDiscount;}
 
 }
