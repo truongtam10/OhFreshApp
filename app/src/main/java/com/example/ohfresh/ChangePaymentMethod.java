@@ -73,8 +73,7 @@ public class ChangePaymentMethod extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChangePaymentMethod.this, Checkout.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

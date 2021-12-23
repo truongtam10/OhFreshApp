@@ -21,7 +21,7 @@ import com.example.model.Product;
 import java.util.ArrayList;
 
 
-public class Checkout extends AppCompatActivity {
+public class Checkout extends AppCompatActivity implements PaymentAdapter.OnPaymentListener {
 
     RecyclerView rcvPaymentMethod;
     RecyclerView rcvCheckoutItem;
@@ -77,7 +77,7 @@ public class Checkout extends AppCompatActivity {
         paymentMethods.add(new PaymentMethod("Thẻ", R.drawable.ic_card, "Thêm thẻ tín dụng/ghi nợ"));
         paymentMethods.add(new PaymentMethod("Ví ZaloPay",R.drawable.ic_zalo,"Liên kết tài khoản ZaloPay"));
 
-        paymentAdapter = new PaymentAdapter(getApplicationContext(), paymentMethods);
+        paymentAdapter = new PaymentAdapter(getApplicationContext(), paymentMethods, this);
         rcvPaymentMethod.setAdapter(paymentAdapter);
     }
 
@@ -134,4 +134,29 @@ public class Checkout extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void OnPaymentListener(int position) {
+        rcvPaymentMethod.onHoverChanged(true);
+        switch (position){
+            case 0:
+                Intent intent0 = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent0);
+
+            case 1:
+                Intent intent1 = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent1);
+
+            case 2:
+                Intent intent2 = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent2);
+
+            case 3:
+                Intent intent3 = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent3);
+
+            case 4:
+                Intent intent4 = new Intent(Checkout.this, ChangePaymentMethod.class);
+                startActivity(intent4);
+        }
+    }
 }

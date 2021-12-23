@@ -34,202 +34,216 @@
 
     </FrameLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/frameLayout"
-        android:orientation="vertical">
 
-        <TextView
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Thông tin người nhận"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@id/frameLayout"
+            android:paddingBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Họ tên người nhận"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Thông tin người nhận"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"/>
 
-            <EditText
-                android:layout_height="45dp"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:hint="Oh!Fresh"
-                android:fontFamily="@font/montserrat_regular"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Họ tên người nhận"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
+                <EditText
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:hint="Oh!Fresh"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Số điện thoại"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:hint="099887766"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Số điện thoại"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
-
-            <EditText
-                android:layout_height="45dp"
-                android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:hint="099887766"
-                android:fontFamily="@font/montserrat_regular"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Địa chỉ nhận hàng"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Địa chỉ nhận hàng"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"/>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Tỉnh/Thành Phố"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
 
-            <Spinner
-                android:id="@+id/spinnerCity"
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:fontFamily="@font/montserrat_regular"
-                android:spinnerMode="dropdown"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Tỉnh/Thành Phố"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
-        </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Quận/Huyện"
-                android:textSize="16sp"
-                android:textColor="@color/black" />
-
-            <Spinner
-                android:id="@+id/spinnerDistrict"
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:fontFamily="@font/montserrat_regular"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:spinnerMode="dropdown"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Phường/Xã"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
 
-            <Spinner
-                android:id="@+id/spinnerWard"
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:hint="Phường 1"
-                android:fontFamily="@font/montserrat_regular"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Quận/Huyện"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
 
-        </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerDistrict"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:spinnerMode="dropdown"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp">
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="Số nhà, tên đường"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
 
-            <EditText
-                android:layout_height="45dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Phường/Xã"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/spinnerWard"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:hint="Phường 1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:textSize="16sp"
-                android:layout_weight="0.7"
-                android:hint="001 D2"
-                android:fontFamily="@font/montserrat_regular"
-                android:paddingStart="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Số nhà, tên đường"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="0.7"
+                    android:hint="001 D2"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingStart="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSaveNewAddress"
@@ -246,7 +260,7 @@
             android:backgroundTint="@color/mainGreen"
             android:textAllCaps="false"
             app:cornerRadius="10dp"/>
-    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

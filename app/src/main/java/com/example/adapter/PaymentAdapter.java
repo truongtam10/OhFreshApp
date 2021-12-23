@@ -19,10 +19,13 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
 
     Context context;
     ArrayList<PaymentMethod> payment;
+    private OnPaymentListener onPaymentListener;
 
-    public PaymentAdapter(Context context, ArrayList<PaymentMethod> payment) {
+    public PaymentAdapter(Context context, ArrayList<PaymentMethod> payment, OnPaymentListener onPaymentListener) {
         this.context = context;
         this.payment = payment;
+
+        this.onPaymentListener = onPaymentListener;
     }
 
     @NonNull
@@ -32,7 +35,7 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View customPaymentView = inflater.inflate(R.layout.payment_itemlayout, parent, false);
 
-        return new ViewHolderPayment(customPaymentView);
+        return new ViewHolderPayment(customPaymentView, onPaymentListener);
 
     }
 
@@ -50,17 +53,30 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
         return payment.size();
     }
 
-    public class ViewHolderPayment extends RecyclerView.ViewHolder{
+    public class ViewHolderPayment extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView txtPaymentName, txtPaymentDescription;
         ImageView imgPaymentIcon;
 
-        public ViewHolderPayment(@NonNull View itemView) {
+        OnPaymentListener onPaymentListener;
+
+        public ViewHolderPayment(@NonNull View itemView, OnPaymentListener onPaymentListener) {
             super(itemView);
 
+            this.onPaymentListener = onPaymentListener;
             txtPaymentName = itemView.findViewById(R.id.txtPaymentName);
             txtPaymentDescription = itemView.findViewById(R.id.txtPaymentDescription);
             imgPaymentIcon = itemView.findViewById(R.id.imgPaymentIcon);
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            onPaymentListener.OnPaymentListener(getAdapterPosition());
+        }
+    }
+    public interface OnPaymentListener{
+        void OnPaymentListener(int position);
     }
 }

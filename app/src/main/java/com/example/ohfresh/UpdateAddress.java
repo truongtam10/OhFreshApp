@@ -77,8 +77,9 @@ public class UpdateAddress extends AppCompatActivity {
         btnSaveNewAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UpdateAddress.this, Checkout.class);
-                startActivity(intent);
+                //Intent intent = new Intent(UpdateAddress.this, Checkout.class);
+                //startActivity(intent);
+                finish();
             }
         });
     }

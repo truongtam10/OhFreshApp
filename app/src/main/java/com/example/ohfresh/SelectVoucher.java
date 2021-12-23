@@ -78,8 +78,9 @@ public class SelectVoucher extends AppCompatActivity {
         lvSelectVoucher.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(SelectVoucher.this, Offer.class);
-                startActivity(intent);
+                //Intent intent = new Intent(SelectVoucher.this, Offer.class);
+                //startActivity(intent);
+                finish();
             }
         });
         btnApplyVoucher.setOnClickListener(new View.OnClickListener() {
