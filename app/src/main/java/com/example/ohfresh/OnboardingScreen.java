@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.adapter.OnboardingAdapter;
 import com.example.model.OnboardingItems;
@@ -24,6 +25,7 @@ public class OnboardingScreen extends AppCompatActivity {
     ViewPager2 onboardingViewPager;
     LinearLayout onboardingIndicators;
     Button btnGetStarted;
+    Button btnSkip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class OnboardingScreen extends AppCompatActivity {
         onboardingViewPager = findViewById(R.id.onboardingViewPager);
         onboardingIndicators = findViewById(R.id.onboardingIndicators);
         btnGetStarted = findViewById(R.id.btnGetStarted);
+        btnSkip = findViewById(R.id.btnSkip);
     }
 
     private void initData() {
@@ -118,6 +121,14 @@ public class OnboardingScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OnboardingScreen.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OnboardingScreen.this, HomePage.class);
                 startActivity(intent);
             }
         });

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -14,7 +15,8 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy, lnSettings;
+    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy,lnIntroduce,lnMyVoucher, lnRate, lnSetting, lnLogout;
+    ImageView imvEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,14 @@ public class Account extends AppCompatActivity {
         lnRank= findViewById(R.id.lnRank);
         lnDelivering= findViewById(R.id.lnDelivering);
         lnPolicy = findViewById(R.id.lnPolicy);
-        lnSettings = findViewById(R.id.lnSettings);
+        lnIntroduce= findViewById(R.id.lnIntroduce);
+        lnMyVoucher = findViewById(R.id.lnMyVoucher);
+        lnRate = findViewById(R.id.lnRate);
+        lnSetting = findViewById(R.id.lnSettings);
+        lnLogout = findViewById(R.id.lnLogout);
+
+        imvEdit = findViewById(R.id.imvEdit);
+
     }
 
     private void configureNavigation() {
@@ -68,6 +77,13 @@ public class Account extends AppCompatActivity {
     }
 
     private void addEvents() {
+        imvEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, SettingProfile.class);
+                startActivity(intent);
+            }
+        });
 
         lnDelivering.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,13 +118,70 @@ public class Account extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        lnSettings.setOnClickListener(new View.OnClickListener() {
+        lnIntroduce.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this,IntroduceFriend.class);
+                startActivity(intent);
+            }
+        });
+        lnMyVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this,MyVoucher.class);
+                startActivity(intent);
+            }
+        });
+
+        lnSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent(Account.this, Settings.class);
                 startActivity(intent);
             }
         });
+
+        lnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent intent = new Intent(Account.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    public Account() {
+        super();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

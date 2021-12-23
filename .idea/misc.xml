@@ -38,7 +38,7 @@
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_profile_1.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_prohibit.xml" value="0.19583333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/drawable/ic_send.xml" value="0.19583333333333333" />
-        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.4466666666666667" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_account.xml" value="0.3333333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_category.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_chatting.xml" value="0.3333333333333333" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_help_center.xml" value="0.1796875" />
@@ -51,6 +51,7 @@
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_my_voucher.xml" value="0.14743589743589744" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_notification.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_offer.xml" value="0.4466666666666667" />
+        <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.33014354066985646" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_order.xml" value="0.22" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_order_success.xml" value="0.1796875" />
         <entry key="..\:/CapstoneProject/OhFreshApp/app/src/main/res/layout/activity_product_detail.xml" value="0.22" />
