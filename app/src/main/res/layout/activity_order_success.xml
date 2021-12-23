@@ -4,28 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderSuccess"
-    android:padding="25dp"
+    android:layout_gravity="center_vertical"
     android:orientation="vertical"
-    android:layout_gravity="center_vertical">
+    android:padding="20dp"
+    tools:context=".OrderSuccess">
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:paddingBottom="10dp"
-        >
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageButton
             android:id="@+id/btnReturnOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"
+            android:layout_gravity="center_vertical"
             android:background="@color/white"
-            android:layout_gravity="center_vertical"/>
+            android:src="@drawable/ic_back" />
 
         <TextView
             android:layout_width="match_parent"
@@ -33,72 +33,71 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="Đơn hàng thành công"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            />
+            android:textSize="20sp" />
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center_vertical"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_ordersuccess"
             android:layout_gravity="center"
-            android:layout_marginVertical="60dp"/>
+            android:layout_marginVertical="60dp"
+            android:src="@drawable/img_ordersuccess" />
 
         <TextView
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:text="Cảm ơn bạn đã mua sắm cùng Oh!Fresh. "
-            android:textSize="16dp"
+            android:layout_gravity="center"
             android:fontFamily="@font/montserrat_bold"
-            android:textColor="@color/black"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:text="Cảm ơn bạn đã mua sắm cùng Oh!Fresh. "
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đơn hàng của bạn sẽ được xử lý trong thời gian sớm nhất"
+            android:layout_gravity="center"
             android:fontFamily="@font/montserrat_regular"
-            android:textSize="14dp"
+            android:gravity="center"
             android:paddingHorizontal="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="20dp"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:text="Đơn hàng của bạn sẽ được xử lý trong thời gian sớm nhất"
+            android:textSize="14dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCheckingOrder"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:text="Kiểm tra đơn hàng"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:fontFamily="@font/montserrat_bold"
-            android:textColor="@color/white"
             android:backgroundTint="@color/mainGreen"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Kiểm tra đơn hàng"
             android:textAllCaps="false"
-            app:cornerRadius="10dp"/>
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnHome"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:text="Trang chủ"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:fontFamily="@font/montserrat_bold"
-            android:textColor="@color/mainGreen"
             android:backgroundTint="@color/veryLightGray"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Trang chủ"
             android:textAllCaps="false"
-            app:cornerRadius="10dp"/>
+            android:textColor="@color/mainGreen"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
 
     </LinearLayout>
 

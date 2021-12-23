@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search"
-    android:padding="10dp">
+    android:padding="20dp"
+    tools:context=".Search">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -26,13 +26,13 @@
             app:srcCompat="@drawable/ic_back" />
 
         <androidx.appcompat.widget.SearchView
-            android:layout_width="350dp"
+            android:layout_width="330dp"
             android:layout_height="40dp"
             android:background="@drawable/item_corner"
             android:clickable="true"
-            app:queryHint="Tìm kiếm"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp"/>
+            android:paddingRight="10dp"
+            app:queryHint="Tìm kiếm" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,121 +47,129 @@
             android:id="@+id/linearProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/img_apple"/>
+                android:src="@drawable/img_apple" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Táo đỏ New Zealand"
+                android:fontFamily="@font/montserrat_regular"
                 android:paddingLeft="20dp"
-                android:textColor="@color/mainGray"
-                android:fontFamily="@font/montserrat_regular"/>
+                android:text="Táo đỏ New Zealand"
+                android:textColor="@color/mainGray" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#C8C8D5"/>
+            android:background="#C8C8D5" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/img_banana"/>
+                android:src="@drawable/img_banana" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Chuối già"
+                android:fontFamily="@font/montserrat_regular"
                 android:paddingLeft="20dp"
-                android:textColor="@color/mainGray"
-                android:fontFamily="@font/montserrat_regular"/>
+                android:text="Chuối"
+                android:textColor="@color/mainGray" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#C8C8D5"/>
+            android:background="#C8C8D5" />
 
         <LinearLayout
             android:id="@+id/linearSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_search"/>
+                android:src="@drawable/ic_search" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nho"
+                android:fontFamily="@font/montserrat_regular"
                 android:paddingLeft="20dp"
-                android:textColor="@color/mainGray"
-                android:fontFamily="@font/montserrat_regular"/>
+                android:text="Nho"
+                android:textColor="@color/mainGray" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#C8C8D5"/>
+            android:background="#C8C8D5" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/img_blueberry"/>
+                android:src="@drawable/img_blueberry" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Blueberry"
+                android:fontFamily="@font/montserrat_regular"
                 android:paddingLeft="20dp"
-                android:textColor="@color/mainGray"
-                android:fontFamily="@font/montserrat_regular"/>
+                android:text="Blueberry"
+                android:textColor="@color/mainGray" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#C8C8D5"/>
+            android:background="#C8C8D5" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Xem thêm"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
-            android:fontFamily="@font/montserrat_bold"/>
+            android:text="Xem thêm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
