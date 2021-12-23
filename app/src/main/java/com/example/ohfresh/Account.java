@@ -15,7 +15,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-    LinearLayout lnSupport, lnRank, lnDelivering, lnPolicy,lnIntroduce,lnMyVoucher, lnRate, lnSetting, lnLogout;
+    LinearLayout lnSupport, lnRank, lnHistory, lnDelivering,  lnPolicy,lnIntroduce,lnMyVoucher, lnRate, lnSetting, lnLogout;
     ImageView imvEdit;
 
     @Override
@@ -39,6 +39,7 @@ public class Account extends AppCompatActivity {
         lnRate = findViewById(R.id.lnRate);
         lnSetting = findViewById(R.id.lnSettings);
         lnLogout = findViewById(R.id.lnLogout);
+        lnHistory = findViewById(R.id.lnHistory);
 
         imvEdit = findViewById(R.id.imvEdit);
 
@@ -85,7 +86,23 @@ public class Account extends AppCompatActivity {
             }
         });
 
+        lnHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Order.class);
+                startActivity(intent);
+            }
+        });
+
         lnDelivering.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Account.this, Order.class);
+                startActivity(intent);
+            }
+        });
+
+        lnRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Account.this, Order.class);

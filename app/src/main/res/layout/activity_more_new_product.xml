@@ -8,10 +8,13 @@
     android:paddingTop="10dp">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="20dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -26,23 +29,23 @@
                     android:id="@+id/imbBack"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_back"
-                    android:background="#ffffff"/>
+                    android:background="#ffffff"
+                    android:src="@drawable/ic_back" />
 
                 <androidx.appcompat.widget.SearchView
                     android:layout_width="300dp"
                     android:layout_height="40dp"
+                    android:background="@drawable/item_corner"
                     android:clickable="true"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:background="@drawable/item_corner"/>
+                    android:paddingRight="10dp" />
 
                 <ImageButton
                     android:id="@+id/imbCart"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_cart"
-                    android:background="#ffffff"/>
+                    android:background="#ffffff"
+                    android:src="@drawable/ic_cart" />
             </LinearLayout>
 
             <GridView

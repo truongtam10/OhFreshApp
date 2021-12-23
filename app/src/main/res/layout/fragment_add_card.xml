@@ -10,58 +10,60 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-                <EditText
-                    android:id="@+id/edtCardNum"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Số thẻ"
-                    android:inputType="number"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:textColor="@color/mainGray"
-                    android:textSize="15sp"
-                    android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/edtCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Số thẻ"
+            android:inputType="number"
+            android:textColor="@color/mainGray"
+            android:textSize="15sp" />
+
         <EditText
             android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tên chủ thẻ"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/montserrat_regular"
+            android:hint="Tên chủ thẻ"
             android:textColor="@color/mainGray"
-            android:textSize="15sp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="15sp" />
+
         <EditText
             android:id="@+id/edtExpDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ngày hết hạn"
-            android:inputType="date"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/montserrat_regular"
+            android:hint="Ngày hết hạn"
+            android:inputType="date"
             android:textColor="@color/mainGray"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/mainGreen"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Thêm"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
             android:textSize="15sp"
-            android:layout_marginLeft="5dp"/>
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAddCard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thêm"
-                android:textSize="15sp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserrat_bold"
-                android:textColor="#ffffff"
-                app:layout_constraintTop_toBottomOf="@id/lnEdit"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:backgroundTint="@color/mainGreen"
-                android:textAllCaps="false"
-                app:cornerRadius="10dp"/>
+            app:cornerRadius="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lnEdit" />
 
     </LinearLayout>
 

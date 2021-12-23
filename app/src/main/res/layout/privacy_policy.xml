@@ -7,94 +7,106 @@
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
             android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:orientation="vertical">
+            android:paddingRight="0dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:justificationMode="inter_word"
                 android:text="@string/purpose"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:justificationMode="inter_word"
                 android:text="@string/purposeContent"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_regular"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:justificationMode="inter_word"
                 android:text="@string/scope"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:justificationMode="inter_word"
                 android:text="@string/scopeContent"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_regular"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:justificationMode="inter_word"
                 android:text="@string/time"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:justificationMode="inter_word"
                 android:text="@string/timeContent"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_regular"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:justificationMode="inter_word"
                 android:text="@string/contact"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:justificationMode="inter_word"
                 android:text="@string/contactContent"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_regular"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mean"
-                android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/meanContent"
+                android:fontFamily="@font/montserrat_bold"
                 android:justificationMode="inter_word"
-                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/mean"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:justificationMode="inter_word"
+                android:text="@string/meanContent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

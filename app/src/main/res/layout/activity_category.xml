@@ -2,15 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Category"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category"
+    android:paddingLeft="20dp"
     android:paddingTop="10dp"
-    android:id="@+id/Category">
+    android:paddingRight="20dp"
+    tools:context=".Category">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,25 +23,26 @@
             android:id="@+id/svSearch"
             android:layout_width="330dp"
             android:layout_height="40dp"
+            android:background="@drawable/item_corner"
             android:clickable="true"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:background="@drawable/item_corner"/>
+            android:paddingRight="10dp" />
 
         <ImageButton
             android:id="@+id/imvCart"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_cart"
-            android:background="#ffffff"/>
+            android:background="#ffffff"
+            android:src="@drawable/ic_cart" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:orientation="horizontal"
-
         android:paddingTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,59 +59,59 @@
             android:textSize="10dp"
             app:cornerRadius="15dp"
             app:strokeColor="@color/mainGreen"
-            app:strokeWidth="1dp"/>
+            app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnVegetable"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
-            app:cornerRadius="15dp"
+            android:layout_marginRight="10dp"
             android:backgroundTint="#fff"
-            app:strokeColor="@color/mainGreen"
-            app:strokeWidth="1dp"
-            android:textColor="@color/mainGreen"
             android:text="Rau củ"
+            android:textColor="@color/mainGreen"
             android:textSize="10dp"
-            android:layout_marginRight="10dp"/>
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnFruit"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
-            app:cornerRadius="15dp"
+            android:layout_marginRight="10dp"
             android:backgroundTint="#fff"
-            app:strokeColor="@color/mainGreen"
-            app:strokeWidth="1dp"
-            android:textColor="@color/mainGreen"
             android:text="Trái cây"
+            android:textColor="@color/mainGreen"
             android:textSize="10dp"
-            android:layout_marginRight="10dp"/>
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="1dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSeed"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
-            app:cornerRadius="15dp"
             android:backgroundTint="#fff"
-            app:strokeColor="@color/mainGreen"
-            app:strokeWidth="1dp"
-            android:textColor="@color/mainGreen"
             android:text="Hạt"
-            android:textSize="10dp"/>
+            android:textColor="@color/mainGreen"
+            android:textSize="10dp"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/mainGreen"
+            app:strokeWidth="1dp" />
     </LinearLayout>
 
     <fragment
         android:id="@+id/fragmentProduct"
+        android:name="com.example.ohfresh.AllProductFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:listSelector="@color/light_gray"
-        android:name="com.example.ohfresh.AllProductFragment"
-        tools:layout="@layout/fragment_all_product"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout="@layout/fragment_all_product" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

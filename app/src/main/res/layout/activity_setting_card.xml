@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="20dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -32,10 +32,9 @@
 
                 <ImageView
                     android:id="@+id/imvBack"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_back" />
@@ -44,8 +43,7 @@
                     android:id="@+id/txtSettingAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="112dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="108dp"
                     android:fontFamily="@font/montserrat_bold"
                     android:text="Liên kết thẻ"
                     android:textColor="@color/black"
@@ -57,49 +55,49 @@
                     android:id="@+id/lnAdd"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="15dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginEnd="15dp"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtSettingAddress"
-                    >
+                    app:layout_constraintTop_toBottomOf="@+id/txtSettingAddress">
+
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/ic_credit_cards"
                         android:layout_gravity="center_vertical"
-                        />
+                        android:src="@drawable/ic_credit_cards" />
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_add"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_add" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thêm thẻ mới"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/montserrat_regular"
+                        android:text="Thêm thẻ mới"
                         android:textColor="@color/mainGray"
-                        android:textSize="15sp"
-                        android:layout_marginLeft="5dp"/>
+                        android:textSize="15sp" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <FrameLayout
                 android:id="@+id/container_addcard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"/>
+                android:padding="10dp" />
+
             <FrameLayout
                 android:id="@+id/container_listcard"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
-                android:padding="10dp"
-                />
+                android:padding="10dp" />
         </LinearLayout>
     </ScrollView>
 

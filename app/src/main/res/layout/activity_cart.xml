@@ -64,35 +64,37 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="50dp">
+
         <TableLayout
             android:id="@+id/tblTableInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/background_shadow"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:stretchColumns="1"
             app:layout_constraintBottom_toTopOf="@id/tblVoucher"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:stretchColumns="1"
-            android:paddingVertical="10dp"
-            android:background="@drawable/background_shadow"
-            android:paddingHorizontal="10dp">
+            app:layout_constraintRight_toRightOf="parent">
 
             <TableRow android:layout_marginBottom="7dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Số Lượng"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="2"
-                    android:gravity="end"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:text="Số Lượng"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="end"
+                    android:text="2"
+                    android:textSize="14sp" />
             </TableRow>
 
             <TableRow android:layout_marginBottom="7dp">
@@ -108,103 +110,106 @@
                     android:id="@+id/txtTotalItemPrice"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="119.000"
-                    android:gravity="end"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:gravity="end"
+                    android:text="119.000"
+                    android:textSize="14sp" />
 
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="vnđ"
-                    android:gravity="end"
-                    android:textStyle="italic"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="12sp"/>
+                    android:gravity="end"
+                    android:text="vnđ"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
             </TableRow>
 
             <TableRow android:layout_marginBottom="7dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Giảm giá"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:text="Giảm giá"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/txtDiscountMoney"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="0"
-                    android:gravity="end"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:gravity="end"
+                    android:text="0"
+                    android:textSize="14sp" />
 
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="vnđ"
-                    android:gravity="end"
-                    android:textStyle="italic"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="12sp"/>
+                    android:gravity="end"
+                    android:text="vnđ"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
             </TableRow>
 
 
             <TableRow android:layout_marginBottom="7dp">
+
                 <TextView
                     android:id="@+id/txtShippingFee"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
                     android:text="Phí vận chuyển"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="end"
                     android:text="20.000"
-                    android:gravity="end"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="vnđ"
-                    android:textStyle="italic"
-                    android:gravity="end"
                     android:fontFamily="@font/montserrat_regular"
-                    android:textSize="12sp"/>
+                    android:gravity="end"
+                    android:text="vnđ"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
             </TableRow>
 
             <TableRow>
+
                 <TextView
                     android:id="@+id/txtTotal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="Tổng cộng"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="139.000"
+                    android:fontFamily="@font/montserrat_bold"
                     android:gravity="end"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:textSize="16sp"/>
+                    android:text="139.000"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="vnđ"
-                    android:textStyle="italic"
-                    android:gravity="center"
                     android:fontFamily="@font/montserrat_bold"
-                    android:textSize="12sp"/>
+                    android:gravity="center"
+                    android:text="vnđ"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
             </TableRow>
 
         </TableLayout>
@@ -213,34 +218,33 @@
             android:id="@+id/tblVoucher"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:layout_marginVertical="5dp"
             android:gravity="center_vertical"
             android:stretchColumns="1"
-            app:layout_constraintBottom_toTopOf="@id/btnCheckOut"
-            android:layout_marginVertical="5dp">
+            app:layout_constraintBottom_toTopOf="@id/btnCheckOut">
 
             <TableRow>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Voucher"
-                    android:gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:textSize="16sp"
                     android:layout_marginRight="10dp"
-                    />
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Voucher"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/txtSelectVoucherCart"
-                    android:layout_height="40dp"
                     android:layout_width="match_parent"
-                    android:textSize="16sp"
-                    android:text="Lấy voucher"
-                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
-                    android:gravity="center_vertical"
+                    android:layout_height="40dp"
                     android:layout_gravity="end"
+                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
                     android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center_vertical"
                     android:padding="10dp"
-                    />
+                    android:text="Lấy voucher"
+                    android:textSize="16sp" />
             </TableRow>
         </TableLayout>
 
@@ -248,17 +252,17 @@
             android:id="@+id/btnCheckOutItem"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:text="Thanh toán"
-            android:textSize="18sp"
-            android:gravity="center"
+            android:backgroundTint="@color/mainGreen"
             android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Thanh toán"
+            android:textAllCaps="false"
             android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:backgroundTint="@color/mainGreen"
-            android:textAllCaps="false"
-            app:cornerRadius="10dp"/>
+            app:layout_constraintRight_toRightOf="parent" />
 
     </LinearLayout>
 

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchResult"
-    android:paddingTop="10dp">
+    android:padding="20dp"
+    android:paddingTop="10dp"
+    tools:context=".SearchResult">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -20,25 +21,25 @@
             android:id="@+id/imvBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_back"
-            android:background="#ffffff"/>
+            android:background="#ffffff"
+            android:src="@drawable/ic_back" />
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/svSearchInResult"
             android:layout_width="300dp"
             android:layout_height="40dp"
+            android:background="@drawable/item_corner"
             android:clickable="true"
-            app:queryHint="Tìm kiếm"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:background="@drawable/item_corner"/>
+            app:queryHint="Tìm kiếm" />
 
         <ImageButton
             android:id="@+id/imvCart"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_cart"
-            android:background="#ffffff"/>
+            android:background="#ffffff"
+            android:src="@drawable/ic_cart" />
     </LinearLayout>
 
     <GridView

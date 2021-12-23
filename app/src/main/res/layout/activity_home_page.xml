@@ -20,17 +20,19 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/searchView"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/item_corner"
                 android:clickable="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 app:layout_constraintBottom_toBottomOf="@+id/lnSlider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
