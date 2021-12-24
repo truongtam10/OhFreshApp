@@ -23,6 +23,10 @@
     </string-array>
     -array>
 
+
+    <!-- Login -->
+    <string name="login_other">Hoặc đăng nhập với</string>
+
     <!-- Quên mật khẩu-->
     <string name="miss_pass_title">Quên mật khẩu</string>
     <string name="miss_pass_head">Bạn quên mật khẩu</string>
