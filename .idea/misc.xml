@@ -104,6 +104,9 @@
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/CODING/OhFreshApp/app/src/main/res/layout/rank_member.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Study/3RD/1st Semester/Moblie App/DOAN/OhFresh_FIX/OhFresh/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/background_selected_item.xml" value="0.2703125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/item_corner.xml" value="0.2703125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/drawable/item_corner_green.xml" value="0.2703125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_category.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/activity_change_payment_method.xml" value="0.25416666666666665" />
@@ -115,6 +118,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_newproduct.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_onboarding_container.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/item_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/OhFreshApp/app/src/main/res/layout/payment_itemlayout.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

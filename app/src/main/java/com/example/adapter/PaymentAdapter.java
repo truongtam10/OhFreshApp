@@ -1,10 +1,12 @@
 package com.example.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,6 +48,26 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
         holder.imgPaymentIcon.setImageResource(payment.get(position).getPaymentIcon());
         holder.txtPaymentName.setText(payment.get(position).getPaymentName());
         holder.txtPaymentDescription.setText(payment.get(position).getPaymentDescription());
+
+        holder.lnPaymentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*int row_index = position;
+                notifyDataSetChanged();*/
+
+
+                holder.lnPaymentLayout.setBackgroundResource(R.drawable.background_selected_item);
+            }
+        });
+        /*if(row_index==position){
+            holder.lnPaymentLayout.setBackgroundResource(R.drawable.background_selected_item);
+            //holder.tv1.setTextColor(Color.parseColor("#ffffff"));
+        }
+        else
+        {
+            holder.lnPaymentLayout.setBackgroundResource(R.drawable.item_corner);
+            //holder.tv1.setTextColor(Color.parseColor("#000000"));
+        }*/
     }
 
     @Override
@@ -57,6 +79,7 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
 
         TextView txtPaymentName, txtPaymentDescription;
         ImageView imgPaymentIcon;
+        LinearLayout lnPaymentLayout;
 
         OnPaymentListener onPaymentListener;
 
@@ -67,6 +90,7 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
             txtPaymentName = itemView.findViewById(R.id.txtPaymentName);
             txtPaymentDescription = itemView.findViewById(R.id.txtPaymentDescription);
             imgPaymentIcon = itemView.findViewById(R.id.imgPaymentIcon);
+            lnPaymentLayout = itemView.findViewById(R.id.lnPaymentLayout);
 
             itemView.setOnClickListener(this);
         }

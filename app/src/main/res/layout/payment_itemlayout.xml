@@ -8,6 +8,7 @@
     android:paddingLeft="10dp"
     android:paddingVertical="5dp"
     android:layout_marginHorizontal="10dp"
+    android:id="@+id/lnPaymentLayout"
     >
 
     <LinearLayout
