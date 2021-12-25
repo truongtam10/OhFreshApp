@@ -2,33 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/item_corner">
-    <TableLayout
+    android:layout_height="match_parent">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_margin="10dp">
+        android:layout_height="match_parent">
 
-        <TableRow>
-            <TextView
-                android:id="@+id/txtLogo"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Oh!Fresh"
-                android:gravity="center_vertical"
-                android:fontFamily="@font/montserrat_bold"
-                android:textColor="@color/white"
-                android:background="@drawable/item_corner_green"
-                android:textSize="16sp"
-                android:paddingHorizontal="20dp"
-                />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="@drawable/item_corner"
+            android:layout_marginBottom="10dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="10dp">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Oh!Fresh"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/item_corner_green"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
                     <TextView
                         android:id="@+id/txtVoucherName"
                         android:layout_width="wrap_content"
@@ -46,28 +51,30 @@
                         android:textSize="14sp"
                         android:textColor="@color/black"
                         android:paddingTop="10dp"/>
-                <TextView
-                    android:id="@+id/txtVoucherDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Có hiệu lực đến 20/10/2021 00:00"
-                    android:fontFamily="@font/montserrat_light"
-                    android:textSize="12sp"
-                    android:textColor="@color/mainGray"
-                    android:paddingTop="10dp"/>
-                <TextView
-                    android:id="@+id/txtUseVoucher"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Dùng ngay"
-                    android:textColor="@color/mainGreen"
-                    android:gravity="end"
-                    android:textSize="12sp"/>
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/txtVoucherDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Có hiệu lực đến 20/10/2021 00:00"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="12sp"
+                        android:textColor="@color/mainGray"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txtUseVoucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dùng ngay"
+                        android:textColor="@color/mainGreen"
+                        android:gravity="end"
+                        android:textSize="12sp"/>
+                </LinearLayout>
 
-        </TableRow>
+            </TableRow>
 
 
 
-    </TableLayout>
+        </TableLayout>
+
+    </ScrollView>
 </LinearLayout>
