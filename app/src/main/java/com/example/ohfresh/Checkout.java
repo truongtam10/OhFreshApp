@@ -136,7 +136,7 @@ public class Checkout extends AppCompatActivity implements PaymentAdapter.OnPaym
 
     @Override
     public void OnPaymentListener(int position) {
-        rcvPaymentMethod.onHoverChanged(true);
+        //rcvPaymentMethod.onHoverChanged(true);
         switch (position){
             case 0:
                 Intent intent0 = new Intent(Checkout.this, ChangePaymentMethod.class);

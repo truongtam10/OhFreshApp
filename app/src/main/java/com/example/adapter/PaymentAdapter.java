@@ -55,7 +55,6 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.ViewHold
                 /*int row_index = position;
                 notifyDataSetChanged();*/
 
-
                 holder.lnPaymentLayout.setBackgroundResource(R.drawable.background_selected_item);
             }
         });
