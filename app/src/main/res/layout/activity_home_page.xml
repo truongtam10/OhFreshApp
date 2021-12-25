@@ -20,48 +20,40 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:layout_height="match_parent">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/searchView"
-                android:layout_width="300dp"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/item_corner"
                 android:clickable="true"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                app:layout_constraintBottom_toBottomOf="@+id/lnSlider"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintEnd_toStartOf="@+id/btnCart"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.03" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@id/searchView"
-                app:layout_constraintLeft_toRightOf="@id/searchView"
-                app:layout_constraintRight_toRightOf="parent">
+            <ImageButton
+                android:id="@+id/btnCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_cart"
+                app:layout_constraintBottom_toBottomOf="@+id/searchView"
+                app:layout_constraintEnd_toStartOf="@+id/btnChat"
+                app:layout_constraintTop_toTopOf="@+id/searchView" />
 
-                <ImageButton
-                    android:id="@+id/btnCart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_cart" />
-
-                <ImageButton
-                    android:id="@+id/btnChat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_chat" />
-            </LinearLayout>
-
+            <ImageButton
+                android:id="@+id/btnChat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_chat"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnCart" />
             <LinearLayout
                 android:id="@+id/lnSlider"
                 android:layout_width="wrap_content"
@@ -107,7 +99,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/lnSlider"
-                app:layout_constraintTop_toBottomOf="@id/rclVeggies" />
+                app:layout_constraintTop_toBottomOf="@id/rclVeggies"
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/txtMoreBestSeller"
@@ -147,7 +140,8 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="@id/rclBestSeller"
                 app:layout_constraintTop_toBottomOf="@id/rclBestSeller"
-                app:layout_constraintVertical_bias="0.03" />
+                app:layout_constraintVertical_bias="0.03"
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/txtMoreNewProduct"
