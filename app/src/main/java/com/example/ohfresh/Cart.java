@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -43,6 +44,14 @@ public class Cart extends AppCompatActivity {
         initData();
         addEvent();
 
+        lvProduct.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        lvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
+
     }
 
 
@@ -74,6 +83,8 @@ public class Cart extends AppCompatActivity {
         products.add(new CartProduct(R.drawable.img_blueberry, "Việt quất", 325000, 5, 1));
         adapter = new CartProductAdapter(Cart.this,R.layout.cart_itemlayout,products);
         lvProduct.setAdapter(adapter);
+
+
     }
 
     private void addEvent() {
