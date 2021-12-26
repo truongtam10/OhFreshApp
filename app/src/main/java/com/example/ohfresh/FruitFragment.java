@@ -1,5 +1,6 @@
 package com.example.ohfresh;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.example.adapter.ProductAdapter;
@@ -29,6 +31,14 @@ public class FruitFragment extends Fragment {
         gvFruit = view.findViewById(R.id.gvFruit);
         adapter = new ProductAdapter(getActivity(), R.layout.item_layout, (List<Product>) initData());
         gvFruit.setAdapter(adapter);
+
+        gvFruit.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getContext(), ProductDetail.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

@@ -2,6 +2,7 @@ package com.example.ohfresh;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,7 +14,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,15 +51,12 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
     BestSellingAdapter bslAdapter;
     //GridViewNewProduct
     GridView gvNewProduct;
-//    ArrayList<NewProductItems> newProducts;
-//    NewProductAdapter npAdapter;
-    GridView gvProduct;
     ArrayList<Product> products;
     NewProductAdapter npadapter;
     BottomNavigationView bottomNavigationView;
     ImageButton btnChat, btnCart;
     TextView txtMoreNewProduct, txtMoreBestSeller;
-
+    SearchView svSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +117,7 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
         btnCart = findViewById(R.id.btnCart);
         txtMoreBestSeller = findViewById(R.id.txtMoreBestSeller);
         txtMoreNewProduct = findViewById(R.id.txtMoreNewProduct);
+        svSearch = findViewById(R.id.searchView);
     }
 
     private void loadData() {
@@ -206,8 +204,16 @@ public class HomePage extends AppCompatActivity implements VeggiesAdapter.OnClic
         gvNewProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Product p = (Product) npadapter.getItem(i);
-                Toast.makeText(HomePage.this,i + ": " + p.getName(), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
+                startActivity(intent);
+            }
+        });
+
+        svSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePage.this, Search.class);
+                startActivity(intent);
             }
         });
     }

@@ -52,7 +52,7 @@ public class NewProductAdapter extends BaseAdapter {
             holder.imvThumb = view.findViewById(R.id.imvThumb);
             holder.txtName = view.findViewById(R.id.txtName);
             holder.txtPrice = view.findViewById(R.id.txtPrice);
-            holder.btnUnit = view.findViewById(R.id.btnUnit);
+            holder.txtUnit = view.findViewById(R.id.txtUnit);
 
             view.setTag(holder);
         }else{
@@ -69,7 +69,6 @@ public class NewProductAdapter extends BaseAdapter {
     }
     public static class ViewHolder{
         ImageView imvThumb;
-        TextView txtName, txtPrice;
-        MaterialButton btnUnit;
+        TextView txtName, txtPrice, txtUnit;
     }
 }

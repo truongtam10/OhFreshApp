@@ -129,68 +129,76 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtMissPass" />
 
-            <TextView
-                android:id="@+id/txtMiss"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="27dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Chưa có tài khoản?"
-                android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="@+id/btnLogin"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
-            <TextView
-                android:id="@+id/txtCreateAccount"
+            <LinearLayout
+                android:id="@+id/lnMiss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_marginTop="27dp"
-                android:layout_marginEnd="35dp"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Tạo tài khoản ngay!"
-                android:textColor="@color/mainGreen"
-                android:textSize="15sp"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txtMiss"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin">
+
+                <TextView
+                    android:id="@+id/txtMiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Chưa có tài khoản?"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="2dp"
+                    app:layout_constraintStart_toStartOf="@+id/btnLogin"
+                    app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+                <TextView
+                    android:id="@+id/txtCreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Tạo tài khoản ngay!"
+                    android:textColor="@color/mainGreen"
+                    android:textSize="15sp"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtMiss"
+                    app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/txtLoginWith"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:text="@string/login_other"
                 android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCreateAccount" />
+                app:layout_constraintTop_toBottomOf="@+id/lnMiss" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="10dp"
+            <LinearLayout
+                android:id="@+id/ln3rdParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="135dp"
-                android:src="@drawable/ic_google"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="144dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/ic_fb"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/txtLoginWith">
 
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_google"
+                    android:layout_marginEnd="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_fb"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 

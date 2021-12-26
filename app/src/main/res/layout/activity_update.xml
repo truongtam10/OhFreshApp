@@ -435,50 +435,57 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRate"
-            android:layout_width="175dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="16dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/lnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:strokeColor="@color/mainGreen"
-            app:strokeWidth="1dp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/montserrat_bold"
-            android:gravity="center"
-            android:text="Đánh giá"
-            android:textAllCaps="false"
-            android:textColor="@color/mainGreen"
-            android:textSize="18sp"
-            app:cornerRadius="10dp"
-            android:shadowColor="@color/white"
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRebuy"
-            android:layout_width="175dp"
-            android:layout_height="55dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/mainGreen"
-            android:fontFamily="@font/montserrat_bold"
-            android:gravity="center"
-            android:text="Mua lại"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRate"
+                android:layout_width="175dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:shadowColor="@color/white"
+                android:text="Đánh giá"
+                android:textAllCaps="false"
+                android:textColor="@color/mainGreen"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/mainGreen"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRebuy"
+                android:layout_width="175dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/mainGreen"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Mua lại"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,17 +36,19 @@
         android:paddingTop="5dp"
         android:fontFamily="@font/montserrat_regular"
         />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnUnit"
+    <TextView
+        android:id="@+id/txtUnit"
         android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:cornerRadius="20dp"
+        android:layout_height="40dp"
         android:backgroundTint="#EFEFF3"
         android:text="@string/unit"
         android:textColor="#B4B4BA"
         android:textSize="15sp"
         android:textStyle="italic"
         android:paddingTop="10dp"
-        android:fontFamily="@font/montserrat_semibolditalic"/>
+        android:fontFamily="@font/montserrat_semibolditalic"
+        android:background="@drawable/unit_background"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
 
 </LinearLayout>
